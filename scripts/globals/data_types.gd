@@ -1,6 +1,6 @@
 class_name DataTypes
 
-enum Tools{
+enum Tools {
 	None,
 	AxeWood,
 	TillGround,
