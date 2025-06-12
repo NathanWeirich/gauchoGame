@@ -1,23 +1,31 @@
-[gd_scene load_steps=9 format=4 uid="uid://qfp15yssarl6"]
+[gd_scene load_steps=14 format=4 uid="uid://qfp15yssarl6"]
 
 [ext_resource type="PackedScene" uid="uid://bws3i5uhh7cae" path="res://scenes/ui/game_screen.tscn" id="1_mapoa"]
+[ext_resource type="PackedScene" uid="uid://bxx2x64ltp3y3" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="1_nk4dp"]
 [ext_resource type="PackedScene" uid="uid://ccjes4sdyovgs" path="res://scenes/components/day_night_cycle_component.tscn" id="2_ff0kp"]
 [ext_resource type="TileSet" uid="uid://esasubu4bc34" path="res://Tilesets/game_tile_set.tres" id="3_aolun"]
 [ext_resource type="PackedScene" uid="uid://bdhbers8yp8oc" path="res://scenes/characters/player/player.tscn" id="4_bb1mf"]
 [ext_resource type="PackedScene" uid="uid://bvn0eunf5fv5i" path="res://scenes/components/field_cursor_component.tscn" id="4_mapoa"]
 [ext_resource type="Script" uid="uid://b24a0en0ptr6b" path="res://scenes/components/field_cursor_component.gd" id="5_ff0kp"]
 [ext_resource type="PackedScene" uid="uid://duqi2e3drmjkv" path="res://scenes/components/crops_cursor_component.tscn" id="6_aolun"]
+[ext_resource type="PackedScene" uid="uid://dq8qxxiluwjbo" path="res://scenes/components/save_data_component.tscn" id="6_dxoer"]
 [ext_resource type="Script" uid="uid://wngxagm0a3os" path="res://scenes/components/crops_cursor_component.gd" id="7_bb1mf"]
+[ext_resource type="Resource" uid="uid://ck2fj8toubmfv" path="res://resources/tilemap_layer_data_resource.tres" id="7_t4lsr"]
+[ext_resource type="PackedScene" uid="uid://66a68ao55mka" path="res://scenes/components/save_level_data_component.tscn" id="9_w2jyg"]
+[ext_resource type="Script" uid="uid://co3rbux28oyla" path="res://scenes/components/save_level_data_component.gd" id="10_nk4dp"]
 
 [node name="TestSceneCropFieldsTilledDirt" type="Node2D"]
+
+[node name="TestSceneSaveDataManagerComponent" parent="." instance=ExtResource("1_nk4dp")]
+
+[node name="SaveLevelDataComponent" parent="." instance=ExtResource("9_w2jyg")]
+script = ExtResource("10_nk4dp")
 
 [node name="DayNightCycleComponent" parent="." instance=ExtResource("2_ff0kp")]
 visible = false
 initial_day = 6
 initial_hour = 14
 initial_minute = 18
-
-[node name="GameScreen" parent="." instance=ExtResource("1_mapoa")]
 
 [node name="GameTileMap" type="Node2D" parent="."]
 
@@ -31,6 +39,9 @@ tile_set = ExtResource("3_aolun")
 
 [node name="TilledSoil" type="TileMapLayer" parent="GameTileMap"]
 tile_set = ExtResource("3_aolun")
+
+[node name="SaveDataComponent" parent="GameTileMap/TilledSoil" instance=ExtResource("6_dxoer")]
+save_data_resource = ExtResource("7_t4lsr")
 
 [node name="CropFields" type="Node2D" parent="."]
 
@@ -48,3 +59,5 @@ position = Vector2(233, 172)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(2, 2)
+
+[node name="GameScreen" parent="." instance=ExtResource("1_mapoa")]
