@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=3 uid="uid://c2cdxwktnn07j"]
+
+[ext_resource type="Theme" uid="uid://bihy5f3ktx2ep" path="res://scenes/ui/game_ui_theme.tres" id="1_157xx"]
+[ext_resource type="Script" uid="uid://djyqif5i63wlx" path="res://scenes/ui/emotes_panel.gd" id="2_gdn4g"]
+[ext_resource type="Texture2D" uid="uid://cycfdnctjr1mp" path="res://assets/ui/emotes.png" id="3_157xx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdn4g"]
+atlas = ExtResource("3_157xx")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_157xx"]
+atlas = ExtResource("3_157xx")
+region = Rect2(0, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyaba"]
+atlas = ExtResource("3_157xx")
+region = Rect2(32, 352, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6kdp3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdn4g")
+}],
+"loop": true,
+"name": &"emote_1_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_157xx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyaba")
+}],
+"loop": true,
+"name": &"emote_2_talking",
+"speed": 5.0
+}]
+
+[node name="EmotesPanel" type="Panel"]
+custom_minimum_size = Vector2(50, 50)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("1_157xx")
+theme_type_variation = &"DarkWoodPanel"
+script = ExtResource("2_gdn4g")
+
+[node name="Emote" type="Control" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Emote"]
+position = Vector2(20, 22)
+sprite_frames = SubResource("SpriteFrames_6kdp3")
+animation = &"emote_2_talking"
+autoplay = "emote_1_idle"
+
+[node name="EmoteIdleTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="EmoteIdleTimer" to="." method="_on_emote_idle_timer_timeout"]

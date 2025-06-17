@@ -1,0 +1,14 @@
+~ start
+
+Toelho: [[Hi|Hello]], nice to meet you.
+Toelho: Welcome to Julio de Castilhos.
+Toelho: Serch clues to learn new words.
+Toelho: You can do what you want.
+Toelho: Here are some seeds to grow some crops.
+- Take crop seeds
+	You: Yeah I can grow crops.
+	do GameDialogueManager.action_give_crop_seeds()
+- No, I don't want them
+	You: I'm not ready to grow my farm yet.
+
+=> END
