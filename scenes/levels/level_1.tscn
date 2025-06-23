@@ -1,14 +1,21 @@
-[gd_scene load_steps=7 format=4 uid="uid://70u85oxhlqvh"]
+[gd_scene load_steps=11 format=4 uid="uid://70u85oxhlqvh"]
 
 [ext_resource type="TileSet" uid="uid://esasubu4bc34" path="res://Tilesets/game_tile_set.tres" id="1_ksju7"]
+[ext_resource type="PackedScene" uid="uid://66a68ao55mka" path="res://scenes/components/save_level_data_component.tscn" id="1_oc4kc"]
 [ext_resource type="PackedScene" uid="uid://bvn0eunf5fv5i" path="res://scenes/components/field_cursor_component.tscn" id="2_6761a"]
+[ext_resource type="Script" uid="uid://co3rbux28oyla" path="res://scenes/components/save_level_data_component.gd" id="2_s8va5"]
 [ext_resource type="Script" uid="uid://b24a0en0ptr6b" path="res://scenes/components/field_cursor_component.gd" id="3_sk5k4"]
+[ext_resource type="PackedScene" uid="uid://dq8qxxiluwjbo" path="res://scenes/components/save_data_component.tscn" id="4_dga24"]
 [ext_resource type="PackedScene" uid="uid://duqi2e3drmjkv" path="res://scenes/components/crops_cursor_component.tscn" id="4_oc4kc"]
+[ext_resource type="Resource" uid="uid://ck2fj8toubmfv" path="res://resources/tilemap_layer_data_resource.tres" id="5_qxy0u"]
 [ext_resource type="Script" uid="uid://wngxagm0a3os" path="res://scenes/components/crops_cursor_component.gd" id="5_s8va5"]
 [ext_resource type="PackedScene" uid="uid://ddngnm32jo86t" path="res://scenes/characters/guide/guide.tscn" id="6_sk5k4"]
 
 [node name="Level1" type="Node2D"]
 y_sort_enabled = true
+
+[node name="SaveLevelDataComponent" parent="." instance=ExtResource("1_oc4kc")]
+script = ExtResource("2_s8va5")
 
 [node name="GameTileMap" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -23,6 +30,9 @@ tile_set = ExtResource("1_ksju7")
 
 [node name="TilledSoil" type="TileMapLayer" parent="GameTileMap"]
 tile_set = ExtResource("1_ksju7")
+
+[node name="SaveDataComponent" parent="GameTileMap/TilledSoil" instance=ExtResource("4_dga24")]
+save_data_resource = ExtResource("5_qxy0u")
 
 [node name="Dirt" type="TileMapLayer" parent="GameTileMap"]
 tile_map_data = PackedByteArray("AAAmABYACAAGAAEAAAAmABcACAAAAAEAAAAmABgACAAAAAEAAAAmABkACAAAAAEAAAAmABoACAAAAAEAAAAmABsACAAAAAEAAAAmABwACAAAAAEAAAAmAB0ACAAAAAEAAAAmAB4ACAAAAAEAAAAmAB8ACAAAAAEAAAAmACAACAAAAAIAAAAnABYACAACAAEAAAAnABcACAACAAEAAAAnABgACAACAAEAAAAnABkACAACAAEAAAAnABoACAACAAEAAAAnABsACAACAAEAAAAnABwACAACAAEAAAAnAB0ACAACAAEAAAAnAB4ACAACAAEAAAAnAB8ACAAFAAIAAAAnACAACAAGAAEAAAAnACEACAAAAAEAAAAnACIACAAAAAEAAAAnACMACAAAAAEAAAAnACQACAAAAAEAAAAnACUACAAAAAEAAAAnACYACAAAAAEAAAAoAB8ACAACAAAAAAAoACAACAACAAEAAAAoACEACAACAAEAAAAoACIACAACAAEAAAAoACMACAACAAEAAAAoACQACAACAAEAAAAoACUACAACAAEAAAAoACYACAACAAEAAAAoACcACAACAAEAAAApACkACAABAAAAAAAqACkACAABAAAAAAAqACoACAABAAIAAAArACkACAABAAAAAAArACoACAABAAIAAAAsACkACAABAAAAAAAsACoACAABAAIAAAAtACkACAABAAAAAAAtACoACAABAAIAAAAuACkACAABAAAAAAAuACoACAABAAIAAAAvACkACAABAAAAAAAvACoACAABAAIAAAAwACkACAABAAAAAAAwACoACAABAAIAAAAxACkACAABAAAAAAAxACoACAABAAIAAAAyACkACAABAAAAAAAyACoACAABAAIAAAAzACkACAABAAAAAAAzACoACAABAAIAAAA0ACkACAABAAAAAAA0ACoACAABAAIAAAA1ACkACAAHAAIAAAA1ACoACAACAAIAAAAoABcACAACAAMAAAAmABUACAABAAAAAAAlABUACAABAAAAAAAkABUACAABAAAAAAAjABUACAABAAAAAAAiABUACAABAAAAAAAhABUACAABAAAAAAAgABUACAABAAAAAAAfABUACAABAAAAAAAeABUACAABAAAAAAAdABUACAABAAAAAAAcABUACAABAAAAAAAbABUACAAAAAAAAAAbABYACAAGAAIAAAAaABYACAABAAAAAAAZABYACAABAAAAAAAYABYACAABAAAAAAAXABYACAABAAAAAAAWABYACAAFAAIAAAAVABYACAAAAAEAAAAVABUACAAAAAEAAAAVABQACAAAAAEAAAAVABMACAAAAAEAAAAWABMACAACAAEAAAAWABQACAACAAEAAAAWABUACAACAAEAAAAWABcACAABAAIAAAAXABcACAABAAIAAAAYABcACAABAAIAAAAZABcACAABAAIAAAAaABcACAABAAIAAAAbABcACAABAAIAAAAcABcACAACAAIAAAAcABYACAAFAAEAAAAdABYACAABAAIAAAAeABYACAABAAIAAAAfABYACAABAAIAAAAgABYACAABAAIAAAAhABYACAABAAIAAAAiABYACAABAAIAAAAjABYACAABAAIAAAAkABYACAABAAIAAAAlABYACAABAAIAAAAnABUACAACAAAAAAAnACcACAAAAAEAAAApACoACAABAAIAAAAoACoACAABAAIAAAAoACkACAAFAAIAAAAnACkACAAAAAEAAAAnACgACAAAAAEAAAAoACgACAACAAEAAAAnACoACAAAAAIAAAAVABcACAAAAAIAAAA1ACgACAADAAAAAAAVABIACAAAAAEAAAAVABEACAAAAAEAAAAVABAACAAAAAAAAAAWABAACAACAAAAAAAWABEACAACAAEAAAAWABIACAACAAEAAAA=")
