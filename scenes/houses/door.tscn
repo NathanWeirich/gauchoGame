@@ -106,3 +106,9 @@ shape = SubResource("RectangleShape2D_bxi54")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent"]
 shape = SubResource("RectangleShape2D_nno8d")
 debug_color = Color(0, 0.649502, 0.140948, 0.42)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

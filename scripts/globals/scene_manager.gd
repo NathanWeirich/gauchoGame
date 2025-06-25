@@ -3,9 +3,12 @@ extends Node
 var main_scene_path: String = "res://scenes/main_scene.tscn"
 var main_scene_root_path: String = "/root/MainScene"
 var main_scene_level_root_path: String = "/root/MainScene/GameRoot/LevelRoot"
+var last_door_id: String = ""
+var door_cooldown: bool = false
 
 var level_scenes : Dictionary = {
-	"Level1" : "res://scenes/levels/level_1.tscn"
+	"Level1" : "res://scenes/levels/level_1.tscn",
+	"Level2" : "res://scenes/levels/level_2.tscn"
 }
 
 func load_main_scene_container() -> void:
@@ -37,3 +40,8 @@ func load_level(level: String) -> void:
 		await get_tree().process_frame
 		
 		level_root.add_child(level_scene)
+
+func start_door_cooldown(duration := 0.5):
+	door_cooldown = true
+	await get_tree().create_timer(duration).timeout
+	door_cooldown = false
