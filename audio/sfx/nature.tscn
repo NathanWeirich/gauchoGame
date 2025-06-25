@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgsxbiv6lpfdo"]
+
+[ext_resource type="AudioStream" uid="uid://1rtvwpqxbdip" path="res://assets/audio/sfx/nature.ogg" id="1_pip3c"]
+
+[node name="Nature" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_pip3c")
+bus = &"SFX"

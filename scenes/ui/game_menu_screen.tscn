@@ -1,13 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://c0jhf07rg4s53"]
+[gd_scene load_steps=7 format=3 uid="uid://c0jhf07rg4s53"]
 
 [ext_resource type="Theme" uid="uid://bihy5f3ktx2ep" path="res://scenes/ui/game_ui_theme.tres" id="1_5slcd"]
 [ext_resource type="Script" uid="uid://blvon3n84seq1" path="res://scenes/ui/game_menu_screen.gd" id="1_l5nq4"]
+[ext_resource type="PackedScene" uid="uid://dlao4i2bgor4m" path="res://audio/music/main_menu.tscn" id="2_16g87"]
 [ext_resource type="PackedScene" uid="uid://cwjmy3ftymrgt" path="res://scenes/components/mouse_cursor_component.tscn" id="2_ecc0l"]
 [ext_resource type="PackedScene" uid="uid://bwpjg1xctorjm" path="res://scenes/ui/game_menu_screen_background.tscn" id="2_vrg0q"]
 [ext_resource type="Texture2D" uid="uid://8xy0ihptpv0q" path="res://assets/ui/mouse_icon.png" id="3_16g87"]
 
 [node name="GameMenuScreen" type="CanvasLayer"]
 script = ExtResource("1_l5nq4")
+
+[node name="MainMenu" parent="." instance=ExtResource("2_16g87")]
+autoplay = true
 
 [node name="MouseCursorComponent" parent="." instance=ExtResource("2_ecc0l")]
 cursor_component_texture = ExtResource("3_16g87")
