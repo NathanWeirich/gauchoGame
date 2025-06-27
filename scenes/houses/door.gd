@@ -28,8 +28,23 @@ func on_interactable_activated() -> void:
 	await animated_sprite_2d.animation_finished
 	if target_scene != "" and target_door_id != "":
 		scene_manager.last_door_id = target_door_id
+		
+		# FADE OUT antes de trocar de cena
+		var transition = null
+		if get_tree().root.has_node("/root/MainScene/Transition"):
+			transition = get_tree().root.get_node("/root/MainScene/Transition")
+		elif get_tree().root.has_node("/root/Transition"):
+			transition = get_tree().root.get_node("/root/Transition")
+		if transition:
+			await transition.fade_in()
+		
 		scene_manager.start_door_cooldown() # inicia cooldown global
 		scene_manager.load_level(target_scene)
+		
+		# FADE IN após trocar de cena (opcional)
+		if transition:
+			await transition.fade_out()
+			
 	$Timer.start()
 
 func on_interactable_deactivated() -> void:

@@ -1,8 +1,9 @@
-[gd_resource type="TileSet" load_steps=19 format=3 uid="uid://esasubu4bc34"]
+[gd_resource type="TileSet" load_steps=25 format=3 uid="uid://esasubu4bc34"]
 
 [ext_resource type="Texture2D" uid="uid://d14kxbdptdj5" path="res://assets/game/tilesets/water.png" id="1_m70i2"]
 [ext_resource type="Texture2D" uid="uid://8mjv0x280nn5" path="res://assets/game/tilesets/grass.png" id="2_hu6sp"]
 [ext_resource type="Texture2D" uid="uid://c2g2dmiirbkqj" path="res://assets/game/tilesets/tilled_dirt_wide_cropfield.png" id="3_mt8is"]
+[ext_resource type="Texture2D" uid="uid://b0g0gy4kyeeug" path="res://assets/game/objects/sculpture_entrance.png" id="3_tl0r4"]
 [ext_resource type="Texture2D" uid="uid://bc562de7qqrku" path="res://assets/game/objects/basic_grass_biom_things.png" id="4_xwv23"]
 [ext_resource type="PackedScene" uid="uid://be2hcx5tv0qkg" path="res://scenes/houses/large_house.tscn" id="5_0b0mn"]
 [ext_resource type="Texture2D" uid="uid://h1wk3bonorbq" path="res://assets/game/tilesets/fences.png" id="5_mt8is"]
@@ -10,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://dmk7o21iyb6eh" path="res://scenes/object/trees/small_tree.tscn" id="6_pi5w0"]
 [ext_resource type="PackedScene" uid="uid://dbc62qbmfkvmx" path="res://scenes/object/trees/large_tree.tscn" id="7_ow828"]
 [ext_resource type="Texture2D" uid="uid://bb3at7ry6joj1" path="res://assets/game/tilesets/dirt_path.png" id="10_o2x3h"]
+[ext_resource type="Texture2D" uid="uid://7m5h1p87bt5d" path="res://assets/game/objects/museu-casa.png" id="10_tmfy7"]
+[ext_resource type="Texture2D" uid="uid://dyjj534vmu1y7" path="res://assets/game/objects/statues.png" id="12_skfke"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbdxd"]
 texture = ExtResource("1_m70i2")
@@ -274,6 +277,13 @@ texture = ExtResource("2_hu6sp")
 4:1/0/terrains_peering_bit/bottom_side = 0
 4:1/0/terrains_peering_bit/top_side = 0
 4:1/0/terrains_peering_bit/top_right_corner = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cv0k1"]
+texture = ExtResource("3_tl0r4")
+0:1/size_in_atlas = Vector2i(6, 4)
+0:1/0 = 0
+0:1/0/y_sort_origin = 26
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(34.5, 31, 17, 31, 17, 15, -1, 15, -1, 32, -36.5, 32, -36.5, 4, 34, 4)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pi5w0"]
 texture = ExtResource("3_mt8is")
@@ -855,6 +865,13 @@ texture = ExtResource("3_mt8is")
 2:3/0/terrain = 3
 2:3/0/terrains_peering_bit/left_side = 3
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tl0r4"]
+texture = ExtResource("10_tmfy7")
+2:1/size_in_atlas = Vector2i(11, 6)
+2:1/0 = 0
+2:1/0/y_sort_origin = 36
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-80, -20, 87, -20, 87, 37, 75, 37, 75, 47, 73, 47, 73, 37, 64.5, 37, 64.5, 20.5, 45.5, 20.5, 45.5, 37, 36, 37, 36, 47, 34, 47, 34, 37, 27, 37, 27, 32, -17, 32, -17, 48, -80, 48)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_skfke"]
 texture = ExtResource("10_o2x3h")
 0:0/0 = 0
@@ -1070,6 +1087,29 @@ texture = ExtResource("10_o2x3h")
 6:1/0/terrains_peering_bit/top_side = 4
 6:1/0/terrains_peering_bit/top_right_corner = 4
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qblla"]
+texture = ExtResource("12_skfke")
+2:1/size_in_atlas = Vector2i(2, 3)
+2:1/0 = 0
+2:1/0/y_sort_origin = 16
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, 24, 13, 24, 13, 16.5, -12, 16.5)
+4:1/size_in_atlas = Vector2i(2, 3)
+4:1/0 = 0
+4:1/0/y_sort_origin = 17
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 24, 16, 24, 16, 17.5, -16, 17)
+6:1/size_in_atlas = Vector2i(2, 3)
+6:1/0 = 0
+6:1/0/y_sort_origin = 19
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, 24, 10, 24, 10, 18, -10, 18)
+0:4/size_in_atlas = Vector2i(2, 3)
+0:4/0 = 0
+0:4/0/y_sort_origin = 18
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-13, 24, 12.5, 24, 12.5, 18, -13, 18)
+0:0/size_in_atlas = Vector2i(2, 4)
+0:0/0 = 0
+0:0/0/y_sort_origin = 24
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-13, 23.5, 15, 23.5, 15, 32, -13, 32)
+
 [resource]
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
@@ -1091,3 +1131,6 @@ sources/5 = SubResource("TileSetScenesCollectionSource_0b0mn")
 sources/4 = SubResource("TileSetAtlasSource_o2x3h")
 sources/6 = SubResource("TileSetAtlasSource_tmfy7")
 sources/8 = SubResource("TileSetAtlasSource_skfke")
+sources/7 = SubResource("TileSetAtlasSource_tl0r4")
+sources/9 = SubResource("TileSetAtlasSource_qblla")
+sources/11 = SubResource("TileSetAtlasSource_cv0k1")

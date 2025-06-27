@@ -8,7 +8,8 @@ var door_cooldown: bool = false
 
 var level_scenes : Dictionary = {
 	"Level1" : "res://scenes/levels/level_1.tscn",
-	"Level2" : "res://scenes/levels/level_2.tscn"
+	"Level2" : "res://scenes/levels/level_2.tscn",
+	"Level3" : "res://scenes/levels/level_3.tscn"
 }
 
 func load_main_scene_container() -> void:
