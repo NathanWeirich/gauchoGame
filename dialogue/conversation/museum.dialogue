@@ -1,0 +1,180 @@
+~ start
+Museum: [[Buenas|Olá|Oi, visitante!]] Bem-vindo ao Museu Vila Rica!
+Museum: Bora ver se tu sabe inglês e história ao mesmo tempo?
+Museum: Mas antes, deixa eu te contar um pouco sobre esse lugar tri importante pra nossa cidade...
+
+~ start_repeat
+Museum: O Museu Municipal Vila Rica fica bem aqui no centro de Júlio de Castilhos.
+Museum: É um museuzinho, pequeno mas cheio de valor
+Museum: Tem mais de 2 mil peças que contam a história da cidade e da nossa região.
+Museum: Tem objetos antigos, documentos, fotografias e muito mais
+Museum: Tudo mostrando como era a vida do povo daqui no passado.
+
+Museum: Além do acervo fixo, também rolam exposições temporárias e eventos culturais.
+Museum: O museu ajuda a preservar a memória e a identidade da cidade
+Museum: Ainda serve de base pra estudos e pesquisas históricas.
+
+Museum: Agora sim, piá... presta atenção que vem pergunta!
+
+=> pergunta1
+
+~ pergunta1
+Museum: Em que ano foi criado o Museu Vila Rica?
+- 1922
+	do GameDialogueManager.action_play_correct_sound()
+	Museum: Isso aí, guri! O museu existe desde 1922.
+	=> pergunta2
+- 1985
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Bah, não! Foi bem antes disso.
+	Museum: O que tu quer fazer agora?
+	- Tentar de novo => pergunta1
+	- Ouvir a história de novo => start_repeat
+- 1890
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Mais antigo que isso, mas tá quase.
+	Museum: O que tu quer fazer agora?
+	- Tentar de novo => pergunta1
+	- Ouvir a história de novo => start_repeat
+- 2000
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Capaz, tchê! Muito recente!
+	Museum: O que tu quer fazer agora?
+	- Tentar de novo => pergunta1
+	- Ouvir a história de novo => start_repeat
+
+~ pergunta2
+Museum: Aproximadamente quantas peças tem o acervo do museu?
+- Mais de 2.000 peças
+	do GameDialogueManager.action_play_correct_sound()
+	Museum: Certíssimo! É isso aí, tchê!
+	=> pergunta3
+- 500 peças
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Bah, é bem mais que isso!
+	Museum: O que tu quer fazer agora?
+	- Tentar de novo => pergunta2
+	- Ouvir a história de novo => start_repeat
+- 10 mil peças
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Capaz! Ainda não temos tanto assim!
+	Museum: O que tu quer fazer agora?
+	- Tentar de novo => pergunta2
+	- Ouvir a história de novo => start_repeat
+- Menos de 1.000 peças
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Tá longe disso, piá!
+	Museum: O que tu quer fazer agora?
+	- Tentar de novo => pergunta2
+	- Ouvir a história de novo => start_repeat
+
+~ pergunta3
+Museum: Onde está localizado o Museu Vila Rica?
+- No centro da cidade
+	do GameDialogueManager.action_play_correct_sound()
+	Museum: Isso aí! Bem no coração de Júlio de Castilhos.
+	=> girias_intro
+- Em um bairro afastado
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Bah, não! Ele fica bem no centro.
+	Museum: O que tu quer fazer agora?
+	- Tentar de novo => pergunta3
+	- Ouvir a história de novo => start_repeat
+- Próximo ao aeroporto
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Capaz! Aqui nem tem aeroporto, tchê!
+	Museum: O que tu quer fazer agora?
+	- Tentar de novo => pergunta3
+	- Ouvir a história de novo => start_repeat
+- No interior do município
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Não, é no centro mesmo, vivente.
+	Museum: O que tu quer fazer agora?
+	- Tentar de novo => pergunta3
+	- Ouvir a história de novo => start_repeat
+
+~ girias_intro
+Museum: Agora que tu acertou tudo, percebeu que usei umas palavras bem diferentes, né?
+~ girias_repeat
+Museum: Aqui no sul a gente fala com bastante gíria gaúcha!
+Museum: Quer ver? Olha só:
+
+Museum: "Bah" a gente usa pra demonstrar surpresa ou emoção — tipo "Wow!" em inglês.  
+Museum: "Capaz" quer dizer tipo "No way!" ou "Really?!", dependendo do tom.  
+Museum: E "piá" ou "guri" é como a gente chama um menino, tipo "boy" ou "kid".
+
+Museum: Agora vamos testar se tu entendeu direitinho!
+=> giria1
+
+~ giria1
+Museum: O que significa "bah" em inglês?
+- Wow!
+	do GameDialogueManager.action_play_correct_sound()
+	Museum: Certo! Bah é tipo "wow!" — surpresa!
+	=> giria2
+- No thanks
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Não é isso, piá! Tenta de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria1
+	- Ouvir a explicação => girias_repeat
+- Sorry
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Bah não é pedido de desculpas! Quer tentar de novo ou ouvir a explicação?
+	- Tentar de novo => giria1
+	- Ouvir a explicação => girias_repeat
+- Yes
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Não, tchê! Bah não quer dizer "sim". Quer tentar de novo ou ouvir a explicação?
+	- Tentar de novo => giria1
+	- Ouvir a explicação => girias_repeat
+
+~ giria2
+Museum: E "capaz"? Qual seria o significado mais próximo?
+- No way!
+	do GameDialogueManager.action_play_correct_sound()
+	Museum: Isso aí, vivente! Capaz expressa surpresa, tipo "no way!".
+	=> giria3
+- I can
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Capaz nesse caso não é de "ser capaz de fazer algo"! Quer tentar de novo ou ouvir a explicação?
+	- Tentar de novo => giria2
+	- Ouvir a explicação => girias_repeat
+- Maybe
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: É mais forte que "talvez", tenta de novo. Quer tentar de novo ou ouvir a explicação?
+	- Tentar de novo => giria2
+	- Ouvir a explicação => girias_repeat
+- Sure
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Bah, não! "Capaz" geralmente nega, não afirma. Quer tentar de novo ou ouvir a explicação?
+	- Tentar de novo => giria2
+	- Ouvir a explicação => girias_repeat
+
+~ giria3
+Museum: E por fim... o que quer dizer "piá"?
+- Boy
+	do GameDialogueManager.action_play_correct_sound()
+	Museum: Tri bem! "Piá" é como chamamos um menino.
+	=> final
+- Grandpa
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Tá loco, piá! Não é um vovô. Quer tentar de novo ou ouvir a explicação?
+	- Tentar de novo => giria3
+	- Ouvir a explicação => girias_repeat
+- Worker
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Capaz! Isso seria "trabalhador". Quer tentar de novo ou ouvir a explicação?
+	- Tentar de novo => giria3
+	- Ouvir a explicação => girias_repeat
+- Cat
+	do GameDialogueManager.action_play_wrong_sound()
+	Museum: Não, não! Nem perto disso. Quer tentar de novo ou ouvir a explicação?
+	- Tentar de novo => giria3
+	- Ouvir a explicação => girias_repeat
+
+
+~ final
+Museum: Parabéns! Tu mandou muito bem nas perguntas!
+Museum: Agora tu tá mais por dentro da nossa história e do nosso jeito de falar.
+Museum: Leva contigo um cartão do Dicionário Gaúcho-Inglês — é tri legal!
+=> END

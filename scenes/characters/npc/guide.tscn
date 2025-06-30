@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://ddngnm32jo86t"]
 
-[ext_resource type="Script" uid="uid://b6kodhb43xdj2" path="res://scenes/characters/guide/guide.gd" id="1_pdv8u"]
-[ext_resource type="Shader" uid="uid://cpgs3cny44ld3" path="res://scenes/characters/guide/replace_color.gdshader" id="1_rl4q2"]
+[ext_resource type="Script" uid="uid://b6kodhb43xdj2" path="res://scenes/characters/npc/guide.gd" id="1_pdv8u"]
+[ext_resource type="Shader" uid="uid://cpgs3cny44ld3" path="res://scenes/characters/npc/replace_color.gdshader" id="1_rl4q2"]
 [ext_resource type="Texture2D" uid="uid://b7bvjv8sslka6" path="res://assets/game/characters/basic_character_sprites2.png" id="2_g6y3g"]
 [ext_resource type="PackedScene" uid="uid://c7irahlcpn8xa" path="res://scenes/components/interactable_component.tscn" id="3_g6y3g"]
 [ext_resource type="PackedScene" uid="uid://c8dod0at247s6" path="res://scenes/components/interactable_label_component.tscn" id="5_qnx84"]
@@ -10,8 +10,8 @@
 shader = ExtResource("1_rl4q2")
 shader_parameter/original_0 = Color(0.360784, 0.305882, 0.572549, 1)
 shader_parameter/original_1 = Color(0.462745, 0.427451, 0.666667, 1)
-shader_parameter/replace_0 = Color(0.722403, 5.19812e-06, 0.461768, 1)
-shader_parameter/replace_1 = Color(0.831373, 0.415686, 0.227451, 1)
+shader_parameter/replace_0 = Color(0, 0.61123, 0.206528, 1)
+shader_parameter/replace_1 = Color(0.0931256, 0.449424, 0, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pdv8u"]
 atlas = ExtResource("2_g6y3g")
@@ -36,7 +36,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yvxhl"]
-radius = 20.0
+radius = 24.0
 
 [node name="Guide" type="Node2D"]
 script = ExtResource("1_pdv8u")

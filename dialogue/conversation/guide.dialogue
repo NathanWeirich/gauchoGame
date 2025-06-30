@@ -1,14 +1,14 @@
 ~ start
 
-Toelho: [[Hi|Hello]], nice to meet you.
-Toelho: Welcome to Julio de Castilhos.
-Toelho: Serch clues to learn new words.
-Toelho: You can do what you want.
-Toelho: Here are some seeds to grow some crops.
-- Take crop seeds
-	You: Yeah I can grow crops.
+Toelho: Olá, prazer em te conhecer!
+Toelho: Bem-vindo à cidade de Júlio de Castilhos.
+Toelho: Aqui, tu vai aprender inglês explorando lugares históricos.
+Toelho: Procure pistas, converse com as pessoas e enfrente desafios!
+Toelho: Ah, e se quiser plantar algo, aqui vão umas sementes pra começar.
+- Aceitar sementes
+	You: Legal! Vou começar minha plantação.
 	do GameDialogueManager.action_give_crop_seeds()
-- No, I don't want them
-	You: I'm not ready to grow my farm yet.
+- Não quero agora
+	You: Ainda não tô pronto pra cuidar da minha fazenda.
 
 => END

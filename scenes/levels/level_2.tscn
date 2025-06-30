@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=4 uid="uid://c4in0o82gyi4k"]
+[gd_scene load_steps=8 format=4 uid="uid://c4in0o82gyi4k"]
 
 [ext_resource type="TileSet" uid="uid://esasubu4bc34" path="res://Tilesets/game_tile_set.tres" id="1_j2425"]
 [ext_resource type="Script" uid="uid://we2j0bl52xct" path="res://scenes/levels/level_2.gd" id="1_ra442"]
 [ext_resource type="PackedScene" uid="uid://b2q428q160ky" path="res://scenes/houses/museum.tscn" id="2_g2h2n"]
 [ext_resource type="PackedScene" uid="uid://ciy0o32qrlk44" path="res://scenes/houses/door.tscn" id="4_fiq81"]
+[ext_resource type="PackedScene" uid="uid://b4vpgiplnuer3" path="res://scenes/characters/npc/museum_npc.tscn" id="5_l37oo"]
+[ext_resource type="PackedScene" uid="uid://c4t18l63uaqs8" path="res://audio/sfx/correct_sound.tscn" id="6_ibugp"]
+[ext_resource type="PackedScene" uid="uid://utgbtrjup4tt" path="res://audio/sfx/wrong_sound.tscn" id="7_8qukl"]
 
 [node name="Level2" type="Node2D"]
 y_sort_enabled = true
@@ -40,3 +43,10 @@ position = Vector2(171, 203)
 door_id = "porta_level2"
 target_scene = "Level1"
 target_door_id = "porta_level1"
+
+[node name="MuseumNPC" parent="." instance=ExtResource("5_l37oo")]
+position = Vector2(139, 58)
+
+[node name="CorrectSound" parent="." instance=ExtResource("6_ibugp")]
+
+[node name="WrongSound" parent="." instance=ExtResource("7_8qukl")]

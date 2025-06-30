@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://crstps48ipb3d"
+path="res://.godot/imported/museum.dialogue-95e22cfda120880260b3366d733cd5fe.tres"
+
+[deps]
+
+source_file="res://dialogue/conversation/museum.dialogue"
+dest_files=["res://.godot/imported/museum.dialogue-95e22cfda120880260b3366d733cd5fe.tres"]
+
+[params]
+
+defaults=true

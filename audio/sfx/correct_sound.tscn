@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4t18l63uaqs8"]
+
+[ext_resource type="AudioStream" uid="uid://dwug5hvvf66ns" path="res://assets/audio/sfx/correct.ogg" id="1_6ml3j"]
+
+[node name="CorrectSound" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_6ml3j")
+bus = &"SFX"

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cbyv4tw8l8x4p"
+path="res://.godot/imported/sculptures.dialogue-ed3f52b5c5b960abf89219d315aafb4a.tres"
+
+[deps]
+
+source_file="res://dialogue/conversation/sculptures.dialogue"
+dest_files=["res://.godot/imported/sculptures.dialogue-ed3f52b5c5b960abf89219d315aafb4a.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://utgbtrjup4tt"]
+
+[ext_resource type="AudioStream" uid="uid://dfwfueby2jdpm" path="res://assets/audio/sfx/wrong.ogg" id="1_qlyc4"]
+
+[node name="WrongSound" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_qlyc4")
+bus = &"SFX"
