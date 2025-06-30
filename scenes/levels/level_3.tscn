@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=4 uid="uid://6hlok2tvs2up"]
+[gd_scene load_steps=16 format=4 uid="uid://6hlok2tvs2up"]
 
 [ext_resource type="Script" uid="uid://cxdywqkg0rcji" path="res://scenes/levels/level_3.gd" id="1_qi5uv"]
 [ext_resource type="PackedScene" uid="uid://66a68ao55mka" path="res://scenes/components/save_level_data_component.tscn" id="2_f6egh"]
 [ext_resource type="Script" uid="uid://co3rbux28oyla" path="res://scenes/components/save_level_data_component.gd" id="3_t4txi"]
 [ext_resource type="TileSet" uid="uid://esasubu4bc34" path="res://Tilesets/game_tile_set.tres" id="4_apo5x"]
+[ext_resource type="PackedScene" uid="uid://bpkmnmomdld1i" path="res://audio/music/sculptures_theme.tscn" id="4_josfm"]
 [ext_resource type="PackedScene" uid="uid://dq8qxxiluwjbo" path="res://scenes/components/save_data_component.tscn" id="5_josfm"]
 [ext_resource type="Resource" uid="uid://ck2fj8toubmfv" path="res://resources/tilemap_layer_data_resource.tres" id="6_lgrx1"]
 [ext_resource type="PackedScene" uid="uid://bvn0eunf5fv5i" path="res://scenes/components/field_cursor_component.tscn" id="7_fhpes"]
@@ -18,6 +19,12 @@
 [node name="Level3" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_qi5uv")
+
+[node name="CorrectSound" parent="." instance=ExtResource("13_t4txi")]
+
+[node name="WrongSound" parent="." instance=ExtResource("14_apo5x")]
+
+[node name="SculpturesTheme" parent="." instance=ExtResource("4_josfm")]
 
 [node name="SaveLevelDataComponent" parent="." instance=ExtResource("2_f6egh")]
 script = ExtResource("3_t4txi")
@@ -83,7 +90,3 @@ target_door_id = "porta_level1_2"
 
 [node name="SculpturesNPC" parent="." instance=ExtResource("12_qi5uv")]
 position = Vector2(855, 335)
-
-[node name="CorrectSound" parent="." instance=ExtResource("13_t4txi")]
-
-[node name="WrongSound" parent="." instance=ExtResource("14_apo5x")]

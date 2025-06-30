@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm0b3x3phtxqx"]
+
+[ext_resource type="AudioStream" uid="uid://1mv686db4765" path="res://assets/audio/sfx/hover.ogg" id="1_2vuo2"]
+
+[node name="Hover" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_2vuo2")
+bus = &"SFX"

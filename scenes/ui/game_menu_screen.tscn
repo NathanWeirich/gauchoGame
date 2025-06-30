@@ -1,13 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://c0jhf07rg4s53"]
+[gd_scene load_steps=9 format=3 uid="uid://c0jhf07rg4s53"]
 
 [ext_resource type="Theme" uid="uid://bihy5f3ktx2ep" path="res://scenes/ui/game_ui_theme.tres" id="1_5slcd"]
 [ext_resource type="Script" uid="uid://blvon3n84seq1" path="res://scenes/ui/game_menu_screen.gd" id="1_l5nq4"]
+[ext_resource type="PackedScene" uid="uid://dlao4i2bgor4m" path="res://audio/music/main_menu.tscn" id="2_dl6il"]
 [ext_resource type="PackedScene" uid="uid://cwjmy3ftymrgt" path="res://scenes/components/mouse_cursor_component.tscn" id="2_ecc0l"]
 [ext_resource type="PackedScene" uid="uid://bwpjg1xctorjm" path="res://scenes/ui/game_menu_screen_background.tscn" id="2_vrg0q"]
 [ext_resource type="Texture2D" uid="uid://8xy0ihptpv0q" path="res://assets/ui/mouse_icon.png" id="3_16g87"]
+[ext_resource type="PackedScene" uid="uid://dr3smv1anlysx" path="res://audio/sfx/click.tscn" id="6_16g87"]
+[ext_resource type="PackedScene" uid="uid://dm0b3x3phtxqx" path="res://audio/sfx/hover.tscn" id="7_dl6il"]
 
 [node name="GameMenuScreen" type="CanvasLayer"]
 script = ExtResource("1_l5nq4")
+
+[node name="MainMenu" parent="." instance=ExtResource("2_dl6il")]
+
+[node name="Click" parent="." instance=ExtResource("6_16g87")]
+
+[node name="Hover" parent="." instance=ExtResource("7_dl6il")]
 
 [node name="MouseCursorComponent" parent="." instance=ExtResource("2_ecc0l")]
 cursor_component_texture = ExtResource("3_16g87")

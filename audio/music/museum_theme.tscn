@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1g1e62dsxdai"]
+
+[ext_resource type="AudioStream" uid="uid://18dd2144pder" path="res://assets/audio/music/museum_theme.ogg" id="1_4fxkj"]
+
+[node name="MuseumTheme" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_4fxkj")
+autoplay = true
+bus = &"Music"

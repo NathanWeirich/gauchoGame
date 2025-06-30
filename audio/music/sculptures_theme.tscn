@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpkmnmomdld1i"]
+
+[ext_resource type="AudioStream" uid="uid://bt2ga2ogs2fko" path="res://assets/audio/music/sculptures_theme.ogg" id="1_ras30"]
+
+[node name="SculpturesTheme" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_ras30")
+autoplay = true
+bus = &"Music"

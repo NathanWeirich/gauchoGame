@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://mkutoymuml08"]
+
+[ext_resource type="AudioStream" uid="uid://qm27bkquabms" path="res://assets/audio/music/main_theme.ogg" id="1_mwl8w"]
+
+[node name="MainTheme" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_mwl8w")
+autoplay = true
+bus = &"Music"
