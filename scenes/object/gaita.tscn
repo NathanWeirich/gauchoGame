@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://c182lhy6svbs3"]
+
+[ext_resource type="Texture2D" uid="uid://cje45dxhkhwmg" path="res://assets/game/objects/collectibles.png" id="1_2heob"]
+[ext_resource type="Script" uid="uid://dy7f165ajgom" path="res://scenes/object/gaita.gd" id="2_fa8ys"]
+[ext_resource type="PackedScene" uid="uid://bs5ojrxjgvdxl" path="res://scenes/components/collectable_component.tscn" id="2_lmjg6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iirau"]
+atlas = ExtResource("1_2heob")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qwqa3"]
+radius = 9.0
+
+[node name="Gaita" type="Sprite2D"]
+y_sort_enabled = true
+texture = SubResource("AtlasTexture_iirau")
+script = ExtResource("2_fa8ys")
+
+[node name="CollectableComponent" parent="." instance=ExtResource("2_lmjg6")]
+collectable_name = "gaita"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent"]
+shape = SubResource("CircleShape2D_qwqa3")

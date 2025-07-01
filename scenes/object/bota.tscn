@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqgbgch7lqit8"]
+
+[ext_resource type="Texture2D" uid="uid://cje45dxhkhwmg" path="res://assets/game/objects/collectibles.png" id="1_iirau"]
+[ext_resource type="Script" uid="uid://dh35cybmb2cn5" path="res://scenes/object/bota.gd" id="2_hy6id"]
+[ext_resource type="PackedScene" uid="uid://bs5ojrxjgvdxl" path="res://scenes/components/collectable_component.tscn" id="2_ppahb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iirau"]
+atlas = ExtResource("1_iirau")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qwqa3"]
+
+[node name="Bota" type="Sprite2D"]
+y_sort_enabled = true
+texture = SubResource("AtlasTexture_iirau")
+script = ExtResource("2_hy6id")
+
+[node name="CollectableComponent" parent="." instance=ExtResource("2_ppahb")]
+collectable_name = "bota"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent"]
+shape = SubResource("CircleShape2D_qwqa3")

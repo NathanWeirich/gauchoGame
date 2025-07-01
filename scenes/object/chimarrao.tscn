@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://c85gntdroqxo6"]
+
+[ext_resource type="Texture2D" uid="uid://cje45dxhkhwmg" path="res://assets/game/objects/collectibles.png" id="1_cdq78"]
+[ext_resource type="PackedScene" uid="uid://bs5ojrxjgvdxl" path="res://scenes/components/collectable_component.tscn" id="2_miois"]
+[ext_resource type="Script" uid="uid://bhm7ogrqk4kco" path="res://scenes/object/chimarrao.gd" id="2_palbh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iirau"]
+atlas = ExtResource("1_cdq78")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qwqa3"]
+radius = 9.0
+
+[node name="Chimarrao" type="Sprite2D"]
+y_sort_enabled = true
+texture = SubResource("AtlasTexture_iirau")
+script = ExtResource("2_palbh")
+
+[node name="CollectableComponent" parent="." instance=ExtResource("2_miois")]
+collectable_name = "chimarrao"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent"]
+shape = SubResource("CircleShape2D_qwqa3")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://crvtb3gs3ewq8"]
+
+[ext_resource type="Texture2D" uid="uid://cje45dxhkhwmg" path="res://assets/game/objects/collectibles.png" id="1_ggxk8"]
+[ext_resource type="PackedScene" uid="uid://bs5ojrxjgvdxl" path="res://scenes/components/collectable_component.tscn" id="2_eklny"]
+[ext_resource type="Script" uid="uid://bvm7ynhbq1288" path="res://scenes/object/livro.gd" id="2_yvpx3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iirau"]
+atlas = ExtResource("1_ggxk8")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qwqa3"]
+radius = 9.0
+
+[node name="Livro" type="Sprite2D"]
+y_sort_enabled = true
+texture = SubResource("AtlasTexture_iirau")
+script = ExtResource("2_yvpx3")
+
+[node name="CollectableComponent" parent="." instance=ExtResource("2_eklny")]
+collectable_name = "livro"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent"]
+shape = SubResource("CircleShape2D_qwqa3")

@@ -1,0 +1,275 @@
+[gd_scene load_steps=5 format=3 uid="uid://dv6wdc684xvvd"]
+
+[ext_resource type="Script" uid="uid://c2fham6moxvhx" path="res://scenes/minigames/wordle/game.gd" id="1_qhxfi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pjmv6"]
+bg_color = Color(0.66946, 0.5211, 0.949579, 1)
+border_width_bottom = 4
+border_color = Color(0.555294, 0.341915, 0.879117, 1)
+expand_margin_left = 15.0
+expand_margin_right = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5hgpe"]
+bg_color = Color(0.557801, 0.346933, 0.884251, 1)
+border_width_bottom = 4
+border_color = Color(0.432479, 0.216309, 0.725744, 1)
+expand_margin_left = 15.0
+expand_margin_right = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qhxfi"]
+bg_color = Color(0.654529, 0.496798, 0.945812, 1)
+border_width_bottom = 4
+border_color = Color(0.44046, 0.222463, 0.738706, 1)
+expand_margin_left = 15.0
+expand_margin_right = 15.0
+shadow_color = Color(0.654902, 0.498039, 0.945098, 0.388235)
+shadow_size = 5
+
+[node name="Game" type="Node2D"]
+position = Vector2(160, 15)
+script = ExtResource("1_qhxfi")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_top = -1.0
+offset_right = 320.0
+offset_bottom = 319.0
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 5
+
+[node name="Button" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button2" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button3" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button4" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button5" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button6" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button7" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button8" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button9" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button10" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button11" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button12" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button13" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button14" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button15" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button16" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button17" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button18" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button19" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button20" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button21" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button22" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button23" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button24" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button25" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Menu" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Menu"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.105882, 0.105882, 0.105882, 0.941176)
+
+[node name="ResultLabel" type="Label" parent="Menu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -93.0
+offset_top = -131.0
+offset_right = 103.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "YOU WON"
+horizontal_alignment = 1
+
+[node name="WordLabel" type="Label" parent="Menu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -68.0
+offset_right = 106.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 16
+text = "Correct Word: MANGO"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Menu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -16.0
+offset_right = 47.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 34
+theme_override_styles/hover = SubResource("StyleBoxFlat_pjmv6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5hgpe")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qhxfi")
+text = "PLAY"
+
+[connection signal="pressed" from="Menu/Button" to="." method="_on_button_pressed"]

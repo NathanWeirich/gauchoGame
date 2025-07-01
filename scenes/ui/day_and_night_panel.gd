@@ -3,7 +3,7 @@ extends Control
 @onready var day_label: Label = $DayPanel/MarginContainer/DayLabel
 @onready var time_label: Label = $TimePanel/MarginContainer/TimeLabel
 
-@export var normal_speed: int = 5
+@export var normal_speed: int = 2
 @export var fast_speed: int = 100
 @export var cheetah_speed: int = 200
 

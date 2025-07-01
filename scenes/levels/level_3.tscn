@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://6hlok2tvs2up"]
+[gd_scene load_steps=22 format=4 uid="uid://6hlok2tvs2up"]
 
 [ext_resource type="Script" uid="uid://cxdywqkg0rcji" path="res://scenes/levels/level_3.gd" id="1_qi5uv"]
 [ext_resource type="PackedScene" uid="uid://66a68ao55mka" path="res://scenes/components/save_level_data_component.tscn" id="2_f6egh"]
@@ -15,6 +15,12 @@
 [ext_resource type="PackedScene" uid="uid://cag6n4d8gmthm" path="res://scenes/characters/npc/sculptures_npc.tscn" id="12_qi5uv"]
 [ext_resource type="PackedScene" uid="uid://c4t18l63uaqs8" path="res://audio/sfx/correct_sound.tscn" id="13_t4txi"]
 [ext_resource type="PackedScene" uid="uid://utgbtrjup4tt" path="res://audio/sfx/wrong_sound.tscn" id="14_apo5x"]
+[ext_resource type="PackedScene" uid="uid://cqgbgch7lqit8" path="res://scenes/object/bota.tscn" id="16_5f5xw"]
+[ext_resource type="PackedScene" uid="uid://dbt0dlhsncbbw" path="res://scenes/object/chapeu.tscn" id="17_o3ttr"]
+[ext_resource type="PackedScene" uid="uid://c85gntdroqxo6" path="res://scenes/object/chimarrao.tscn" id="18_kdsi4"]
+[ext_resource type="PackedScene" uid="uid://c182lhy6svbs3" path="res://scenes/object/gaita.tscn" id="19_kva3v"]
+[ext_resource type="PackedScene" uid="uid://bci45co72tc8w" path="res://scenes/object/laco.tscn" id="20_jql0x"]
+[ext_resource type="PackedScene" uid="uid://crvtb3gs3ewq8" path="res://scenes/object/livro.tscn" id="21_do6pa"]
 
 [node name="Level3" type="Node2D"]
 y_sort_enabled = true
@@ -90,3 +96,21 @@ target_door_id = "porta_level1_2"
 
 [node name="SculpturesNPC" parent="." instance=ExtResource("12_qi5uv")]
 position = Vector2(855, 335)
+
+[node name="Bota" parent="." instance=ExtResource("16_5f5xw")]
+position = Vector2(611, 497)
+
+[node name="Chapeu" parent="." instance=ExtResource("17_o3ttr")]
+position = Vector2(583, 439)
+
+[node name="Chimarrao" parent="." instance=ExtResource("18_kdsi4")]
+position = Vector2(618, 442)
+
+[node name="Gaita" parent="." instance=ExtResource("19_kva3v")]
+position = Vector2(583, 498)
+
+[node name="Laco" parent="." instance=ExtResource("20_jql0x")]
+position = Vector2(584, 473)
+
+[node name="Livro" parent="." instance=ExtResource("21_do6pa")]
+position = Vector2(617, 473)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://cdp4xmavkpigu"]
+[gd_scene load_steps=15 format=4 uid="uid://cdp4xmavkpigu"]
 
 [ext_resource type="TileSet" uid="uid://esasubu4bc34" path="res://Tilesets/game_tile_set.tres" id="1_q8h5q"]
 [ext_resource type="PackedScene" uid="uid://bivkfsdhy4861" path="res://scenes/object/plants/corn_harvest.tscn" id="2_pkvns"]
@@ -8,6 +8,12 @@
 [ext_resource type="PackedScene" uid="uid://bneoacplfamnd" path="res://scenes/object/rocks/stone.tscn" id="4_0jjdr"]
 [ext_resource type="PackedScene" uid="uid://dcf3rnkuustj2" path="res://scenes/object/trees/log.tscn" id="5_h30rg"]
 [ext_resource type="PackedScene" uid="uid://c482xr8iauilv" path="res://scenes/object/milk.tscn" id="6_0jjdr"]
+[ext_resource type="PackedScene" uid="uid://cqgbgch7lqit8" path="res://scenes/object/bota.tscn" id="9_4ry1c"]
+[ext_resource type="PackedScene" uid="uid://dbt0dlhsncbbw" path="res://scenes/object/chapeu.tscn" id="10_d4m3u"]
+[ext_resource type="PackedScene" uid="uid://c85gntdroqxo6" path="res://scenes/object/chimarrao.tscn" id="11_2fpnc"]
+[ext_resource type="PackedScene" uid="uid://c182lhy6svbs3" path="res://scenes/object/gaita.tscn" id="12_rlp2s"]
+[ext_resource type="PackedScene" uid="uid://bci45co72tc8w" path="res://scenes/object/laco.tscn" id="13_5gv6s"]
+[ext_resource type="PackedScene" uid="uid://crvtb3gs3ewq8" path="res://scenes/object/livro.tscn" id="14_rjwti"]
 
 [node name="TestSceneCollectables" type="Node2D"]
 y_sort_enabled = true
@@ -30,19 +36,37 @@ position = Vector2(233, 172)
 zoom = Vector2(2, 2)
 
 [node name="TomatoHarvest" parent="." instance=ExtResource("3_33f7h")]
-position = Vector2(336, 179)
+position = Vector2(393, 51)
 
 [node name="CornHarvest" parent="." instance=ExtResource("2_pkvns")]
-position = Vector2(313, 180)
+position = Vector2(348, 69)
 
 [node name="Egg" parent="." instance=ExtResource("3_bna32")]
-position = Vector2(287, 155)
+position = Vector2(349, 45)
 
 [node name="Stone" parent="." instance=ExtResource("4_0jjdr")]
-position = Vector2(313, 156)
+position = Vector2(391, 69)
 
 [node name="Log" parent="." instance=ExtResource("5_h30rg")]
-position = Vector2(336, 155)
+position = Vector2(372, 69)
 
 [node name="Milk" parent="." instance=ExtResource("6_0jjdr")]
-position = Vector2(287, 180)
+position = Vector2(373, 46)
+
+[node name="Bota" parent="." instance=ExtResource("9_4ry1c")]
+position = Vector2(301, 157)
+
+[node name="Chapeu" parent="." instance=ExtResource("10_d4m3u")]
+position = Vector2(329, 157)
+
+[node name="Chimarrao" parent="." instance=ExtResource("11_2fpnc")]
+position = Vector2(301, 131)
+
+[node name="Gaita" parent="." instance=ExtResource("12_rlp2s")]
+position = Vector2(332, 131)
+
+[node name="Laco" parent="." instance=ExtResource("13_5gv6s")]
+position = Vector2(302, 183)
+
+[node name="Livro" parent="." instance=ExtResource("14_rjwti")]
+position = Vector2(331, 183)

@@ -1,10 +1,10 @@
 ~ start
 
-Toelho: Olá, prazer em te conhecer!
-Toelho: Bem-vindo à cidade de Júlio de Castilhos.
-Toelho: Aqui, tu vai aprender inglês explorando lugares históricos.
-Toelho: Procure pistas, converse com as pessoas e enfrente desafios!
-Toelho: Ah, e se quiser plantar algo, aqui vão umas sementes pra começar.
+Júlio de Castilhos: Olá, prazer em te conhecer!
+Júlio de Castilhos: Bem-vindo à cidade de Júlio de Castilhos.
+Júlio de Castilhos: Aqui, tu vai aprender inglês explorando lugares históricos.
+Júlio de Castilhos: Procure pistas, converse com as pessoas e enfrente desafios!
+Júlio de Castilhos: Ah, e se quiser plantar algo, aqui vão umas sementes pra começar.
 - Aceitar sementes
 	You: Legal! Vou começar minha plantação.
 	do GameDialogueManager.action_give_crop_seeds()

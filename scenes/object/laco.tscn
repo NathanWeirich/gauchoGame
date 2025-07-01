@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://bci45co72tc8w"]
+
+[ext_resource type="Texture2D" uid="uid://cje45dxhkhwmg" path="res://assets/game/objects/collectibles.png" id="1_8a5es"]
+[ext_resource type="Script" uid="uid://djtr2n35lg6q4" path="res://scenes/object/laco.gd" id="2_2cnui"]
+[ext_resource type="PackedScene" uid="uid://bs5ojrxjgvdxl" path="res://scenes/components/collectable_component.tscn" id="2_qgesm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iirau"]
+atlas = ExtResource("1_8a5es")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qwqa3"]
+radius = 9.0
+
+[node name="Laco" type="Sprite2D"]
+y_sort_enabled = true
+texture = SubResource("AtlasTexture_iirau")
+script = ExtResource("2_2cnui")
+
+[node name="CollectableComponent" parent="." instance=ExtResource("2_qgesm")]
+collectable_name = "laco"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent"]
+shape = SubResource("CircleShape2D_qwqa3")
