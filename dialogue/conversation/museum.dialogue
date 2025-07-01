@@ -1,4 +1,11 @@
 ~ start
+if GameState.museu_falou == true
+	Júlio de Castilhos: Você já fez tudo que tinha pra fazer aqui.
+	=> END
+else
+	start1
+
+~ start1
 Júlio de Castilhos: [[Buenas|Olá|Oi, visitante!]] Bem-vindo ao Museu Vila Rica!
 Júlio de Castilhos: Bora ver se tu sabe inglês e história ao mesmo tempo?
 Júlio de Castilhos: Mas antes, deixa eu te contar um pouco sobre esse lugar tri importante pra nossa cidade...
@@ -177,4 +184,5 @@ Júlio de Castilhos: E por fim... o que quer dizer "piá"?
 Júlio de Castilhos: Parabéns! Tu mandou muito bem nas perguntas!
 Júlio de Castilhos: Agora tu tá mais por dentro da nossa história e do nosso jeito de falar.
 Júlio de Castilhos: Leva contigo um cartão do Dicionário Gaúcho-Inglês — é tri legal!
+set GameState.museu_falou = true
 => END

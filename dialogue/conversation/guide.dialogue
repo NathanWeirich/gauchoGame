@@ -1,5 +1,11 @@
 ~ start
+if GameState.julio_falou == true
+	Júlio de Castilhos: Você já fez tudo que tinha pra fazer aqui.
+	=> END
+else
+	=> primeira_vez
 
+~ primeira_vez
 Júlio de Castilhos: Olá, prazer em te conhecer!
 Júlio de Castilhos: Bem-vindo à cidade de Júlio de Castilhos.
 Júlio de Castilhos: Aqui, tu vai aprender inglês explorando lugares históricos.
@@ -8,7 +14,7 @@ Júlio de Castilhos: Ah, e se quiser plantar algo, aqui vão umas sementes pra c
 - Aceitar sementes
 	You: Legal! Vou começar minha plantação.
 	do GameDialogueManager.action_give_crop_seeds()
+	set GameState.julio_falou = true
 - Não quero agora
 	You: Ainda não tô pronto pra cuidar da minha fazenda.
-
 => END

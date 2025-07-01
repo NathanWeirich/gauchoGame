@@ -28,7 +28,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		if event.is_action_pressed("show_dialogue"):
 			var balloon: BaseGameDialogueBalloon = balloon_scene.instantiate()
 			get_tree().root.add_child(balloon)
-			balloon.start(load("res://dialogue/conversation/guide.dialogue"), "start")
+			balloon.start(load("res://dialogue/conversation/guide.dialogue"), "start", [GameState])
 
 func on_give_crop_seeds() -> void:
 	ToolManager.enable_tool_button(DataTypes.Tools.TillGround)
