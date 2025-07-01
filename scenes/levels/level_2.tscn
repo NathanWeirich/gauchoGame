@@ -52,4 +52,4 @@ target_scene = "Level1"
 target_door_id = "porta_level1"
 
 [node name="MuseumNPC" parent="." instance=ExtResource("5_l37oo")]
-position = Vector2(139, 58)
+position = Vector2(139, 66)

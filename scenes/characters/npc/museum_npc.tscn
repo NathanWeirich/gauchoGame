@@ -1,8 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://b4vpgiplnuer3"]
+[gd_scene load_steps=15 format=3 uid="uid://b4vpgiplnuer3"]
 
 [ext_resource type="Script" uid="uid://ci6rol320j5on" path="res://scenes/characters/npc/museum_npc.gd" id="1_rp8qj"]
 [ext_resource type="Shader" uid="uid://cpgs3cny44ld3" path="res://scenes/characters/npc/replace_color.gdshader" id="2_2kf32"]
-[ext_resource type="Texture2D" uid="uid://b7bvjv8sslka6" path="res://assets/game/characters/basic_character_sprites2.png" id="3_m45om"]
+[ext_resource type="Texture2D" uid="uid://kkqpco1ix8jm" path="res://assets/game/characters/julio_de_castilhos.png" id="3_rp8qj"]
 [ext_resource type="PackedScene" uid="uid://c7irahlcpn8xa" path="res://scenes/components/interactable_component.tscn" id="4_agcjm"]
 [ext_resource type="PackedScene" uid="uid://c8dod0at247s6" path="res://scenes/components/interactable_label_component.tscn" id="5_gkmhg"]
 
@@ -13,26 +13,54 @@ shader_parameter/original_1 = Color(0.462745, 0.427451, 0.666667, 1)
 shader_parameter/replace_0 = Color(0.338191, 0.401902, 1, 1)
 shader_parameter/replace_1 = Color(0.137657, 3.94672e-06, 0.627234, 1)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pdv8u"]
-atlas = ExtResource("3_m45om")
-region = Rect2(0, 0, 48, 48)
+[sub_resource type="AtlasTexture" id="AtlasTexture_6n208"]
+atlas = ExtResource("3_rp8qj")
+region = Rect2(16, 0, 16, 34)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qnx84"]
-atlas = ExtResource("3_m45om")
-region = Rect2(48, 0, 48, 48)
+[sub_resource type="AtlasTexture" id="AtlasTexture_lyyp8"]
+atlas = ExtResource("3_rp8qj")
+region = Rect2(48, 0, 16, 34)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_xo3ut"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_cral6"]
+atlas = ExtResource("3_rp8qj")
+region = Rect2(80, 0, 16, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxkf6"]
+atlas = ExtResource("3_rp8qj")
+region = Rect2(112, 0, 16, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vy60k"]
+atlas = ExtResource("3_rp8qj")
+region = Rect2(144, 0, 16, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8x6j"]
+atlas = ExtResource("3_rp8qj")
+region = Rect2(176, 0, 16, 34)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2kf32"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pdv8u")
+"texture": SubResource("AtlasTexture_6n208")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qnx84")
+"texture": SubResource("AtlasTexture_lyyp8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cral6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kxkf6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vy60k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8x6j")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 3.0
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yvxhl"]
@@ -43,8 +71,8 @@ script = ExtResource("1_rp8qj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 material = SubResource("ShaderMaterial_yvxhl")
-position = Vector2(0, -8)
-sprite_frames = SubResource("SpriteFrames_xo3ut")
+position = Vector2(0, -15)
+sprite_frames = SubResource("SpriteFrames_2kf32")
 animation = &"idle"
 autoplay = "idle"
 

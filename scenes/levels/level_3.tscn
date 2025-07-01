@@ -98,19 +98,19 @@ target_door_id = "porta_level1_2"
 position = Vector2(855, 335)
 
 [node name="Bota" parent="." instance=ExtResource("16_5f5xw")]
-position = Vector2(611, 497)
+position = Vector2(828, 497)
 
 [node name="Chapeu" parent="." instance=ExtResource("17_o3ttr")]
-position = Vector2(583, 439)
+position = Vector2(800, 439)
 
 [node name="Chimarrao" parent="." instance=ExtResource("18_kdsi4")]
-position = Vector2(618, 442)
+position = Vector2(835, 442)
 
 [node name="Gaita" parent="." instance=ExtResource("19_kva3v")]
-position = Vector2(583, 498)
+position = Vector2(800, 498)
 
 [node name="Laco" parent="." instance=ExtResource("20_jql0x")]
-position = Vector2(584, 473)
+position = Vector2(801, 473)
 
 [node name="Livro" parent="." instance=ExtResource("21_do6pa")]
-position = Vector2(617, 473)
+position = Vector2(834, 473)
