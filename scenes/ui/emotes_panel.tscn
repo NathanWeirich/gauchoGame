@@ -1,19 +1,20 @@
-[gd_scene load_steps=8 format=3 uid="uid://c2cdxwktnn07j"]
+[gd_scene load_steps=9 format=3 uid="uid://c2cdxwktnn07j"]
 
 [ext_resource type="Theme" uid="uid://bihy5f3ktx2ep" path="res://scenes/ui/game_ui_theme.tres" id="1_157xx"]
 [ext_resource type="Script" uid="uid://djyqif5i63wlx" path="res://scenes/ui/emotes_panel.gd" id="2_gdn4g"]
 [ext_resource type="Texture2D" uid="uid://cycfdnctjr1mp" path="res://assets/ui/emotes.png" id="3_157xx"]
+[ext_resource type="Texture2D" uid="uid://b4cuaeiddjepk" path="res://assets/ui/emotes_julio.png" id="4_gdn4g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gdn4g"]
 atlas = ExtResource("3_157xx")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_157xx"]
-atlas = ExtResource("3_157xx")
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyaba"]
+atlas = ExtResource("4_gdn4g")
 region = Rect2(0, 352, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jyaba"]
-atlas = ExtResource("3_157xx")
+[sub_resource type="AtlasTexture" id="AtlasTexture_0v663"]
+atlas = ExtResource("4_gdn4g")
 region = Rect2(32, 352, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6kdp3"]
@@ -28,10 +29,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_157xx")
+"texture": SubResource("AtlasTexture_jyaba")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jyaba")
+"texture": SubResource("AtlasTexture_0v663")
 }],
 "loop": true,
 "name": &"emote_2_talking",
@@ -66,6 +67,7 @@ position = Vector2(20, 22)
 sprite_frames = SubResource("SpriteFrames_6kdp3")
 animation = &"emote_2_talking"
 autoplay = "emote_1_idle"
+frame_progress = 0.0696453
 
 [node name="EmoteIdleTimer" type="Timer" parent="."]
 wait_time = 5.0
