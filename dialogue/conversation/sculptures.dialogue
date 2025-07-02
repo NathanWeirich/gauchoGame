@@ -1,11 +1,17 @@
 ~ start
-Júlio de Castilhos: [[Hi|Hello|Howdy]], this is some dialogue.
-Júlio de Castilhos: Here are some choices.
-- First one
-	Júlio de Castilhos: You picked the first one.
-- Second one
-	Júlio de Castilhos: You picked the second one.
-- Start again => start
-- End the conversation => END
-Júlio de Castilhos: For more information see the online documentation.
+if GameState.museu_falou == true
+	Júlio de Castilhos: Você já fez tudo que tinha pra fazer aqui. Siga em frente!
+	=> END
+else
+	=> start1
+
+~ start1
+Júlio de Castilhos: Olá, visitante! Bem-vindo ao Jardim das Esculturas!
+Júlio de Castilhos: Aqui, cada escultura representa algo importante da tanto para a cultura gaúcha...
+Júlio de Castilhos: quanto para outras culturas.
+Júlio de Castilhos: Por isso tenho mais desafio especial para tu, tchê!
+Júlio de Castilhos: Ao longo do mapa, estão escondidos 6 itens importantes...
+Júlio de Castilhos: que representam a cultura do Rio Grande do Sul e devem ser achados!
+Júlio de Castilhos: Boa sorte!
+set GameState.museu_falou = true
 => END

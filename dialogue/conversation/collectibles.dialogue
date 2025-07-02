@@ -1,23 +1,655 @@
-~ bota
-Júlio de Castilhos: Pegou a bota
+~ chapeu
+~ start_repeat1
+Júlio de Castilhos: Parabéns! achaste o item que representa a vestimenta gaúcha!
+Júlio de Castilhos: Os peões gaúchos têm uma vestimenta típica, parte da cultura e da tradição do Rio Grande do Sul.
+Júlio de Castilhos: Eles usam a bombacha, uma calça larga e confortável, ideal para montar a cavalo e trabalhar no campo.
+Júlio de Castilhos: Nos pés, usam botas de couro, que protegem ao andar nas cavalgadas.
+Júlio de Castilhos: Na cintura, o peão usa a guaiaca, onde guarda pequenos objetos. 
+Júlio de Castilhos: No pescoço, sempre carrega um lenço, para se proteger do vento e do sol.
+Júlio de Castilhos: Para completar, usam chapéu ou boina, que protegem a cabeça do sol forte durante o trabalho.
+
+Júlio de Castilhos: As prendas, que são as mulheres gaúchas, também têm uma vestimenta tradicional e cheia de significado.
+Júlio de Castilhos: Elas usam o vestido de prenda, que é longo e rodado, geralmente com rendas, bordados e cores vivas. 
+Júlio de Castilhos: Nos pés, usam sapatos fechados, que combinam com o vestido.
+Júlio de Castilhos: Os cabelos das prendas são geralmente presos em trança ou coque, muitas vezes decorados.
+
+Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre as roupas do gaúcho, aqui vai um quiz!
+
+=> pergunta1
+~ pergunta1
+Júlio de Castilhos: Como se diz "chapéu" em inglês?
+- Boots
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta1
+	- Ouvir a história de novo => start_repeat1
+- Hat
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! 
+	=> pergunta2
+- Belt
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta1
+	- Ouvir a história de novo => start_repeat1
+- Scarf
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta1
+	- Ouvir a história de novo => start_repeat1
+
+~ pergunta2
+Júlio de Castilhos: How do you say “dress” in Portuguese?
+- Lenço
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta2
+	- Ouvir a história de novo => start_repeat1
+- Sapato
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta2
+	- Ouvir a história de novo => start_repeat1
+- Vestido
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! 
+	=> pergunta3
+- Bombacha
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta2
+	- Ouvir a história de novo => start_repeat1
+	
+~ pergunta3
+Júlio de Castilhos: The gaucho wears ______ on his legs to work.
+- boots
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta3
+	- Ouvir a história de novo => start_repeat1
+- hat
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta3
+	- Ouvir a história de novo => start_repeat1
+- guaiaca
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta3
+	- Ouvir a história de novo => start_repeat1
+- bombacha
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! 
+	=> pergunta4
+	
+~ pergunta4
+Júlio de Castilhos: The guaiaca is worn around the neck.
+- Verdadeiro
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta4
+	- Ouvir a história de novo => start_repeat1
+- Falso
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! 
+	=> feedback1
+	
+~ feedback1
+Júlio de Castilhos: Parabéns guri, agora sabes mais sobra as roupas gaúchas!
 => END
 
-~ chapeu
-Júlio de Castilhos: Pegou o chapeu
-=> END
+
+
+
 
 ~ chimarrao
-Júlio de Castilhos: Pegou o chimarrao
+~ start_repeat2
+Júlio de Castilhos: A gastronomia gaúcha é cheia de sabores fortes e tradições que fazem parte do dia a dia.
+Júlio de Castilhos: Um dos itens mais importantes é o chimarrão, uma bebida quente feita de erva-mate.
+Júlio de Castilhos: O principal prato típico é o churrasco, feito com cortes grandes de carne.
+Júlio de Castilhos: Também tem o arroz carreteiro, que é arroz misturado com carne picada e temperos.
+Júlio de Castilhos: No inverno, o pinhão é muito consumido cozido ou assado, sendo uma comida típica das festas juninas.
+Júlio de Castilhos: Outro alimento muito comum é o queijo colonial, feito de forma artesanal. É ótimo para comer com cuca.
+Júlio de Castilhos: Falando em cuca, é um tipo de bolo de origem alemã, que tem uma massa fofa coberta com farofa doce.
+
+Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre a gastronomia gaúcha, aqui vai um quiz!
+
+=> pergunta11
+~ pergunta11
+Júlio de Castilhos: Como se diz “chimarrão” em inglês?
+- Corn cake
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta11
+	- Ouvir a história de novo => start_repeat2
+- Cheese bread
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta11
+	- Ouvir a história de novo => start_repeat2
+- Mate tea
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri!
+	=> pergunta22
+- Barbecue
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta11
+	- Ouvir a história de novo => start_repeat2
+
+~ pergunta22
+Júlio de Castilhos: How do you say “barbecue” in Portuguese?
+- Churrasco
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri!
+	=> pergunta33
+- Chimarrão
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta22
+	- Ouvir a história de novo => start_repeat2
+- Arroz com carne picada
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta22
+	- Ouvir a história de novo => start_repeat2
+- Arroz carreteiro
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta22
+	- Ouvir a história de novo => start_repeat2
+	
+~ pergunta33
+Júlio de Castilhos: The “arroz carreteiro” is made with rice and ______.
+- cheese
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta33
+	- Ouvir a história de novo => start_repeat2
+- meat
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri!
+	=> pergunta44
+- corn
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta33
+	- Ouvir a história de novo => start_repeat2
+- beans
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta33
+	- Ouvir a história de novo => start_repeat2
+	
+~ pergunta44
+Júlio de Castilhos: Cuca is a type of traditional cake of italian origin.
+- Verdadeiro
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta44
+	- Ouvir a história de novo => start_repeat2
+- Falso
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri!
+	=> feedback2
+	
+~ feedback2
+Júlio de Castilhos: Parabéns guri, agora sabes mais sobre a gastronomia gaúcha!
 => END
+
+
+
+
 
 ~ gaita
-Júlio de Castilhos: Pegou a gaita
+~ start_repeat3
+Júlio de Castilhos: A música e as danças gaúchas fazem parte da cultura e das festas tradicionais no Rio Grande do Sul.
+Júlio de Castilhos: Um dos instrumentos mais importantes é a gaita, usada para tocar músicas típicas nos rodeios e bailes gaúchos.
+Júlio de Castilhos: Existem várias danças tradicionais, como, por exemplo...
+Júlio de Castilhos: A chula, onde o dançarino mostra passos rápidos batendo os pés no chão, sem sair do lugar.
+Júlio de Castilhos: Tem também a Vaneira, que é dançada em pares, com passos rápidos e alegres.
+Júlio de Castilhos: O Xote também é dançado em pares, mas com passos mais calmos e românticos.
+Júlio de Castilhos: Já a Milonga tem um ritmo mais lento, com passos marcados e elegantes.
+Júlio de Castilhos: A música nativista é outro estilo muito forte aqui no Sul. Ela fala sobre o campo, os cavalos e a vida simples.
+
+Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre a música e as danças gaúchas, aqui vai um quiz!
+
+=> pergunta111
+~ pergunta111
+Júlio de Castilhos: Como se diz “gaita” em inglês?
+- Guitar
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta111
+	- Ouvir a história de novo => start_repeat3
+- Drum
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta111
+	- Ouvir a história de novo => start_repeat3
+- Accordion
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! 
+	=> pergunta222
+- Hat
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta111
+	- Ouvir a história de novo => start_repeat3
+
+~ pergunta222
+Júlio de Castilhos: How do you say “dance” in Portuguese?
+- Festa
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta222
+	- Ouvir a história de novo => start_repeat3
+- Música
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta222
+	- Ouvir a história de novo => start_repeat3
+- Instrumento
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta222
+	- Ouvir a história de novo => start_repeat3
+- Dança
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri!
+	=> pergunta333
+	
+~ pergunta333
+Júlio de Castilhos: The “xote” is danced in pairs with ______ steps.
+- Fast
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta333
+	- Ouvir a história de novo => start_repeat3
+- Calm
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri!
+	=> pergunta444
+- Strong
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta333
+	- Ouvir a história de novo => start_repeat3
+- Heavy
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta333
+	- Ouvir a história de novo => start_repeat3
+	
+~ pergunta444
+Júlio de Castilhos: Milonga is a dance with fast and cheerful steps.
+- Verdadeiro
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri!
+	=> feedback3
+- Falso
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta444
+	- Ouvir a história de novo => start_repeat3
+	
+~ feedback3
+Júlio de Castilhos: Parabéns guri, agora sabes mais sobre a música e as danças gaúchas!
 => END
 
-~ laco
-Júlio de Castilhos: Pegou o laço
-=> END
+
+
+
 
 ~ livro
-Júlio de Castilhos: Pegou o livro
+~ start_repeat4
+Júlio de Castilhos: A história do Rio Grande do Sul é muito rica e cheia de diferentes povos e culturas.
+Júlio de Castilhos: Os primeiros habitantes da região foram os povos indígenas, que viviam da caça, pesca, agricultura.
+Júlio de Castilhos: Depois, vieram as missões jesuíticas, que eram vilas criadas pelos padres jesuítas junto com os indígenas.
+Júlio de Castilhos: A região também foi marcada pela colonização portuguesa e espanhola.
+Júlio de Castilhos: Um fato muito importante foi a Revolução Farroupilha, quando os gaúchos lutaram por mais autonomia.
+Júlio de Castilhos: Apesar de terem perdido a guerra, essa revolução se tornou símbolo de coragem e orgulho para o povo gaúcho.
+Júlio de Castilhos: Depois, houve a colonização europeia, com a chegada de outros povos que trouxeram suas tradições, comidas e festas.
+
+Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre a história do Rio Grande do Sul, aqui vai um quiz!
+
+=> pergunta1111
+~ pergunta1111
+Júlio de Castilhos: Como se diz “povos indígenas” em inglês?
+- European peoples
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! Os primeiros habitantes foram os povos indígenas.
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta1111
+	- Ouvir a história de novo => start_repeat4
+- Farmers
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! Os primeiros habitantes foram os povos indígenas.
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta1111
+	- Ouvir a história de novo => start_repeat4
+- Indigenous peoples
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! Os primeiros habitantes foram os Guarani e os Kaingang.
+	=> pergunta2222
+- Colonial peoples
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! Os primeiros habitantes foram os povos indígenas.
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta1111
+	- Ouvir a história de novo => start_repeat4
+
+~ pergunta2222
+Júlio de Castilhos: How do you say “missions” in Portuguese?
+- Colonização
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! As missões eram vilas criadas pelos jesuítas com os indígenas.
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta2222
+	- Ouvir a história de novo => start_repeat4
+- Missões
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! As missões eram vilas organizadas pelos jesuítas e indígenas.
+	=> pergunta3333
+- Igrejas
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! As missões eram vilas criadas pelos jesuítas.
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta2222
+	- Ouvir a história de novo => start_repeat4
+- Povos
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! As missões eram vilas criadas pelos jesuítas.
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta2222
+	- Ouvir a história de novo => start_repeat4
+	
+~ pergunta3333
+Júlio de Castilhos: The “Revolução Farroupilha” happened because the gaúchos wanted ______.
+- autonomy
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri!
+	=> pergunta4444
+- food 
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta3333
+	- Ouvir a história de novo => start_repeat4
+- horses
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta3333
+	- Ouvir a história de novo => start_repeat4
+- gold
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta3333
+	- Ouvir a história de novo => start_repeat4
+	
+~ pergunta4444
+Júlio de Castilhos: The European colonization brought Germans, Italians, and Polish to RS.
+- Verdadeiro
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! 
+	=> feedback4
+- Falso
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! 
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta4444
+	- Ouvir a história de novo => start_repeat4
+	
+~ feedback4
+Júlio de Castilhos: Parabéns guri, agora sabes mais sobre a história do Rio Grande do Sul!
 => END
+
+
+
+
+
+~ bota
+~ start_repeat5
+Júlio de Castilhos: As atividades rurais mostram como o gaúcho tem uma ligação forte com o campo e com os animais.
+Júlio de Castilhos: Uma das principais atividades é a criação de gado, onde os peões cuidam dos bois e vacas.
+Júlio de Castilhos: No campo, também é muito importante o cultivo agrícola, principalmente de soja, milho e trigo.
+Júlio de Castilhos: Essas plantações ocupam grandes áreas e ajudam muito na economia do estado e do Brasil.
+Júlio de Castilhos: Essas atividades mostram a força e o orgulho do gaúcho, mantém viva as antigas tradições.
+
+Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre as atividades rurais do Rio Grande do Sul, aqui vai um quiz!
+
+=> pergunta11111
+~ pergunta11111
+Júlio de Castilhos: Como se diz “gado” em inglês?
+- Chicken
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! 
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta11111
+	- Ouvir a história de novo => start_repeat5
+- Sheep
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! 
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta11111
+	- Ouvir a história de novo => start_repeat5
+- Fish
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! 
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta11111
+	- Ouvir a história de novo => start_repeat5
+- Cattle
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! 
+	=> pergunta22222
+
+~ pergunta22222
+Júlio de Castilhos: How do you say “wheat” in Portuguese?
+- Soja
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta22222
+	- Ouvir a história de novo => start_repeat5
+- Trigo
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri!
+	=> pergunta33333
+- Milho
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta22222
+	- Ouvir a história de novo => start_repeat5
+- Feijão
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta22222
+	- Ouvir a história de novo => start_repeat5
+	
+~ pergunta33333
+Júlio de Castilhos: The main crops in RS are wheat, corn and ______.
+- Soy
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! 
+	=> pergunta44444
+- Onions
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta33333
+	- Ouvir a história de novo => start_repeat5
+- Tomatoes
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta33333
+	- Ouvir a história de novo => start_repeat5
+- Potatoes
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta33333
+	- Ouvir a história de novo => start_repeat5
+	
+~ pergunta44444
+Júlio de Castilhos: The main crops in RS help the economy of the state and Brazil.
+- Verdadeiro
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! 
+	=> feedback5
+- Falso
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! 
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta44444
+	- Ouvir a história de novo => start_repeat5
+	
+~ feedback5
+Júlio de Castilhos: Parabéns guri, agora sabes mais sobre as atividades rurais do Rio Grande do Sul!
+=> END
+
+
+
+
+
+~ laco
+~ start_repeat6
+Júlio de Castilhos: As festas e eventos mostram como o povo gaúcho gosta de manter suas tradições vivas.
+Júlio de Castilhos: Uma das comemorações mais importantes é a Semana Farroupilha, que acontece em setembro.
+Júlio de Castilhos: Nela, os gaúchos lembram a Revolução Farroupilha com desfiles, música e uso das roupas tradicionais.
+Júlio de Castilhos: Além disso, existem as festas típicas de colonização, com festas italianas e alemãs...
+Júlio de Castilhos: que celebram a chegada dos imigrantes europeus com músicas, comidas e danças tradicionais de cada povo.
+Júlio de Castilhos: Outro evento são os festivais nativistas, onde artistas apresentam músicas que falam sobre o campo.
+Júlio de Castilhos: Essas festas e eventos mostram como os gaúchos valorizam sua cultura e suas origens.
+
+Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre as festas e eventos do Rio Grande do Sul, aqui vai um quiz!
+
+=> pergunta111111
+~ pergunta111111
+Júlio de Castilhos: Como se diz “Semana Farroupilha” em inglês?
+- Autumn Festival
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta111111
+	- Ouvir a história de novo => start_repeat6
+- Winter Week
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta111111
+	- Ouvir a história de novo => start_repeat6
+- Carnival Week
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta111111
+	- Ouvir a história de novo => start_repeat6
+- Farroupilha Week
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri!
+	=> pergunta222222
+
+~ pergunta222222
+Júlio de Castilhos: How do you say “lasso” in Portuguese?
+- Chapéu
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta222222
+	- Ouvir a história de novo => start_repeat6
+- Laço
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri!
+	=> pergunta333333
+- Bombacha
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta222222
+	- Ouvir a história de novo => start_repeat6
+- Lenço
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta222222
+	- Ouvir a história de novo => start_repeat6
+	
+~ pergunta333333
+Júlio de Castilhos: Nativist festivals feature ______ about the countryside.
+- Songs
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! 
+	=> pergunta444444
+- Dances
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! 
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta333333
+	- Ouvir a história de novo => start_repeat6
+-  Foods
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! 
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta333333
+	- Ouvir a história de novo => start_repeat6
+- Clothes
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê! 
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta333333
+	- Ouvir a história de novo => start_repeat6
+	
+~ pergunta444444
+Júlio de Castilhos: The Farroupilha Week celebrates European colonization.
+- Verdadeiro
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Errou, tchê!
+	Júlio de Castilhos: O que tu quer fazer agora?
+	- Tentar de novo => pergunta444444
+	- Ouvir a história de novo => start_repeat6
+- Falso
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Isso aí, guri! 
+	=> feedback6
+	
+~ feedback6
+Júlio de Castilhos: Parabéns guri, agora sabes mais sobre as festas e eventos do Rio Grande do Sul!
+=> END
+
+
