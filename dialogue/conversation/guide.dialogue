@@ -1,6 +1,6 @@
 ~ start
 if GameState.julio_falou == true
-	Júlio de Castilhos: Você já fez tudo que tinha pra fazer aqui. Siga em frente!
+	Júlio de Castilhos: Siga em frente!
 	=> END
 else
 	=> primeira_vez

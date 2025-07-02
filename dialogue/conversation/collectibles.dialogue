@@ -26,7 +26,7 @@ Júlio de Castilhos: Como se diz "chapéu" em inglês?
 	- Ouvir a história de novo => start_repeat1
 - Hat
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! 
+	Júlio de Castilhos: Isso aí, tchê! 
 	=> pergunta2
 - Belt
 	do GameDialogueManager.action_play_wrong_sound()
@@ -57,7 +57,7 @@ Júlio de Castilhos: How do you say “dress” in Portuguese?
 	- Ouvir a história de novo => start_repeat1
 - Vestido
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! 
+	Júlio de Castilhos: Isso aí, tchê! 
 	=> pergunta3
 - Bombacha
 	do GameDialogueManager.action_play_wrong_sound()
@@ -68,27 +68,27 @@ Júlio de Castilhos: How do you say “dress” in Portuguese?
 	
 ~ pergunta3
 Júlio de Castilhos: The gaucho wears ______ on his legs to work.
-- boots
+- Boots
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta3
 	- Ouvir a história de novo => start_repeat1
-- hat
+- Hat
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta3
 	- Ouvir a história de novo => start_repeat1
-- guaiaca
+- Guaiaca
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta3
 	- Ouvir a história de novo => start_repeat1
-- bombacha
+- Bombacha
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! 
+	Júlio de Castilhos: Isso aí, tchê! 
 	=> pergunta4
 	
 ~ pergunta4
@@ -101,7 +101,7 @@ Júlio de Castilhos: The guaiaca is worn around the neck.
 	- Ouvir a história de novo => start_repeat1
 - Falso
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! 
+	Júlio de Castilhos: Isso aí, tchê! 
 	=> feedback1
 	
 ~ feedback1
@@ -141,7 +141,7 @@ Júlio de Castilhos: Como se diz “chimarrão” em inglês?
 	- Ouvir a história de novo => start_repeat2
 - Mate tea
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri!
+	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta22
 - Barbecue
 	do GameDialogueManager.action_play_wrong_sound()
@@ -154,7 +154,7 @@ Júlio de Castilhos: Como se diz “chimarrão” em inglês?
 Júlio de Castilhos: How do you say “barbecue” in Portuguese?
 - Churrasco
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri!
+	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta33
 - Chimarrão
 	do GameDialogueManager.action_play_wrong_sound()
@@ -177,23 +177,23 @@ Júlio de Castilhos: How do you say “barbecue” in Portuguese?
 	
 ~ pergunta33
 Júlio de Castilhos: The “arroz carreteiro” is made with rice and ______.
-- cheese
+- Cheese
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta33
 	- Ouvir a história de novo => start_repeat2
-- meat
+- Meat
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri!
+	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta44
-- corn
+- Corn
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta33
 	- Ouvir a história de novo => start_repeat2
-- beans
+- Beans
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -210,7 +210,7 @@ Júlio de Castilhos: Cuca is a type of traditional cake of italian origin.
 	- Ouvir a história de novo => start_repeat2
 - Falso
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri!
+	Júlio de Castilhos: Isso aí, tchê!
 	=> feedback2
 	
 ~ feedback2
@@ -251,7 +251,7 @@ Júlio de Castilhos: Como se diz “gaita” em inglês?
 	- Ouvir a história de novo => start_repeat3
 - Accordion
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! 
+	Júlio de Castilhos: Isso aí, tchê! 
 	=> pergunta222
 - Hat
 	do GameDialogueManager.action_play_wrong_sound()
@@ -282,7 +282,7 @@ Júlio de Castilhos: How do you say “dance” in Portuguese?
 	- Ouvir a história de novo => start_repeat3
 - Dança
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri!
+	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta333
 	
 ~ pergunta333
@@ -295,7 +295,7 @@ Júlio de Castilhos: The “xote” is danced in pairs with ______ steps.
 	- Ouvir a história de novo => start_repeat3
 - Calm
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri!
+	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta444
 - Strong
 	do GameDialogueManager.action_play_wrong_sound()
@@ -314,7 +314,7 @@ Júlio de Castilhos: The “xote” is danced in pairs with ______ steps.
 Júlio de Castilhos: Milonga is a dance with fast and cheerful steps.
 - Verdadeiro
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri!
+	Júlio de Castilhos: Isso aí, tchê!
 	=> feedback3
 - Falso
 	do GameDialogueManager.action_play_wrong_sound()
@@ -360,7 +360,7 @@ Júlio de Castilhos: Como se diz “povos indígenas” em inglês?
 	- Ouvir a história de novo => start_repeat4
 - Indigenous peoples
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! Os primeiros habitantes foram os Guarani e os Kaingang.
+	Júlio de Castilhos: Isso aí, tchê! Os primeiros habitantes foram os Guarani e os Kaingang.
 	=> pergunta2222
 - Colonial peoples
 	do GameDialogueManager.action_play_wrong_sound()
@@ -379,7 +379,7 @@ Júlio de Castilhos: How do you say “missions” in Portuguese?
 	- Ouvir a história de novo => start_repeat4
 - Missões
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! As missões eram vilas organizadas pelos jesuítas e indígenas.
+	Júlio de Castilhos: Isso aí, tchê! As missões eram vilas organizadas pelos jesuítas e indígenas.
 	=> pergunta3333
 - Igrejas
 	do GameDialogueManager.action_play_wrong_sound()
@@ -396,23 +396,23 @@ Júlio de Castilhos: How do you say “missions” in Portuguese?
 	
 ~ pergunta3333
 Júlio de Castilhos: The “Revolução Farroupilha” happened because the gaúchos wanted ______.
-- autonomy
+- Autonomy
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri!
+	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta4444
-- food 
+- Food 
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta3333
 	- Ouvir a história de novo => start_repeat4
-- horses
+- Horses
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta3333
 	- Ouvir a história de novo => start_repeat4
-- gold
+- Gold
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -423,7 +423,7 @@ Júlio de Castilhos: The “Revolução Farroupilha” happened because the gaú
 Júlio de Castilhos: The European colonization brought Germans, Italians, and Polish to RS.
 - Verdadeiro
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! 
+	Júlio de Castilhos: Isso aí, tchê! 
 	=> feedback4
 - Falso
 	do GameDialogueManager.action_play_wrong_sound()
@@ -473,7 +473,7 @@ Júlio de Castilhos: Como se diz “gado” em inglês?
 	- Ouvir a história de novo => start_repeat5
 - Cattle
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! 
+	Júlio de Castilhos: Isso aí, tchê! 
 	=> pergunta22222
 
 ~ pergunta22222
@@ -486,7 +486,7 @@ Júlio de Castilhos: How do you say “wheat” in Portuguese?
 	- Ouvir a história de novo => start_repeat5
 - Trigo
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri!
+	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta33333
 - Milho
 	do GameDialogueManager.action_play_wrong_sound()
@@ -505,7 +505,7 @@ Júlio de Castilhos: How do you say “wheat” in Portuguese?
 Júlio de Castilhos: The main crops in RS are wheat, corn and ______.
 - Soy
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! 
+	Júlio de Castilhos: Isso aí, tchê! 
 	=> pergunta44444
 - Onions
 	do GameDialogueManager.action_play_wrong_sound()
@@ -530,7 +530,7 @@ Júlio de Castilhos: The main crops in RS are wheat, corn and ______.
 Júlio de Castilhos: The main crops in RS help the economy of the state and Brazil.
 - Verdadeiro
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! 
+	Júlio de Castilhos: Isso aí, tchê! 
 	=> feedback5
 - Falso
 	do GameDialogueManager.action_play_wrong_sound()
@@ -582,7 +582,7 @@ Júlio de Castilhos: Como se diz “Semana Farroupilha” em inglês?
 	- Ouvir a história de novo => start_repeat6
 - Farroupilha Week
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri!
+	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta222222
 
 ~ pergunta222222
@@ -595,7 +595,7 @@ Júlio de Castilhos: How do you say “lasso” in Portuguese?
 	- Ouvir a história de novo => start_repeat6
 - Laço
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri!
+	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta333333
 - Bombacha
 	do GameDialogueManager.action_play_wrong_sound()
@@ -614,7 +614,7 @@ Júlio de Castilhos: How do you say “lasso” in Portuguese?
 Júlio de Castilhos: Nativist festivals feature ______ about the countryside.
 - Songs
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! 
+	Júlio de Castilhos: Isso aí, tchê! 
 	=> pergunta444444
 - Dances
 	do GameDialogueManager.action_play_wrong_sound()
@@ -622,7 +622,7 @@ Júlio de Castilhos: Nativist festivals feature ______ about the countryside.
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta333333
 	- Ouvir a história de novo => start_repeat6
--  Foods
+- Foods
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê! 
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -645,7 +645,7 @@ Júlio de Castilhos: The Farroupilha Week celebrates European colonization.
 	- Ouvir a história de novo => start_repeat6
 - Falso
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! 
+	Júlio de Castilhos: Isso aí, tchê! 
 	=> feedback6
 	
 ~ feedback6
