@@ -1,188 +1,229 @@
 ~ start
 if GameState.museu_falou == true
-	Júlio de Castilhos: Você já fez tudo que tinha pra fazer aqui.
+	Júlio de Castilhos: Você já aprendeu sobre as gírias gaúchas. Avance para o próximo local!
 	=> END
 else
-	start1
-
-~ start1
-Júlio de Castilhos: [[Buenas|Olá|Oi, visitante!]] Bem-vindo ao Museu Vila Rica!
-Júlio de Castilhos: Bora ver se tu sabe inglês e história ao mesmo tempo?
-Júlio de Castilhos: Mas antes, deixa eu te contar um pouco sobre esse lugar tri importante pra nossa cidade...
+	=> start_repeat
 
 ~ start_repeat
+Júlio de Castilhos: [[Buenas|Olá|Oi, visitante!]] Bem-vindo ao Museu Vila Rica!
+Júlio de Castilhos: Antes de qualquer coisa...
+Júlio de Castilhos: deixa eu te contar um pouco sobre esse lugar tri importante pra nossa cidade...
 Júlio de Castilhos: O Museu Municipal Vila Rica fica bem aqui no centro de Júlio de Castilhos.
-Júlio de Castilhos: É um museuzinho, pequeno mas cheio de valor
-Júlio de Castilhos: Tem mais de 2 mil peças que contam a história da cidade e da nossa região.
-Júlio de Castilhos: Tem objetos antigos, documentos, fotografias e muito mais
+Júlio de Castilhos: São mais de duas mil peças que contam a história da cidade e da nossa região.
+Júlio de Castilhos: Tem objetos antigos, documentos, fotografias e muito mais, tudo tri interessante de ver.
 Júlio de Castilhos: Tudo mostrando como era a vida do povo daqui no passado.
+Júlio de Castilhos: Isso ajuda a preservar a memória e a identidade da cidade.
+Júlio de Castilhos: E ainda serve de base para estudos e pesquisas históricas.
 
-Júlio de Castilhos: Além do acervo fixo, também rolam exposições temporárias e eventos culturais.
-Júlio de Castilhos: O museu ajuda a preservar a memória e a identidade da cidade
-Júlio de Castilhos: Ainda serve de base pra estudos e pesquisas históricas.
-
-Júlio de Castilhos: Agora sim, piá... presta atenção que vem pergunta!
-
-=> pergunta1
-
-~ pergunta1
-Júlio de Castilhos: Em que ano foi criado o Museu Vila Rica?
-- 1922
-	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, guri! O museu existe desde 1922.
-	=> pergunta2
-- 1985
-	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Bah, não! Foi bem antes disso.
-	Júlio de Castilhos: O que tu quer fazer agora?
-	- Tentar de novo => pergunta1
-	- Ouvir a história de novo => start_repeat
-- 1890
-	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Mais antigo que isso, mas tá quase.
-	Júlio de Castilhos: O que tu quer fazer agora?
-	- Tentar de novo => pergunta1
-	- Ouvir a história de novo => start_repeat
-- 2000
-	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Capaz, tchê! Muito recente!
-	Júlio de Castilhos: O que tu quer fazer agora?
-	- Tentar de novo => pergunta1
-	- Ouvir a história de novo => start_repeat
-
-~ pergunta2
-Júlio de Castilhos: Aproximadamente quantas peças tem o acervo do museu?
-- Mais de 2.000 peças
-	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Certíssimo! É isso aí, tchê!
-	=> pergunta3
-- 500 peças
-	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Bah, é bem mais que isso!
-	Júlio de Castilhos: O que tu quer fazer agora?
-	- Tentar de novo => pergunta2
-	- Ouvir a história de novo => start_repeat
-- 10 mil peças
-	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Capaz! Ainda não temos tanto assim!
-	Júlio de Castilhos: O que tu quer fazer agora?
-	- Tentar de novo => pergunta2
-	- Ouvir a história de novo => start_repeat
-- Menos de 1.000 peças
-	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Tá longe disso, piá!
-	Júlio de Castilhos: O que tu quer fazer agora?
-	- Tentar de novo => pergunta2
-	- Ouvir a história de novo => start_repeat
-
-~ pergunta3
-Júlio de Castilhos: Onde está localizado o Museu Vila Rica?
-- No centro da cidade
-	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí! Bem no coração de Júlio de Castilhos.
-	=> girias_intro
-- Em um bairro afastado
-	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Bah, não! Ele fica bem no centro.
-	Júlio de Castilhos: O que tu quer fazer agora?
-	- Tentar de novo => pergunta3
-	- Ouvir a história de novo => start_repeat
-- Próximo ao aeroporto
-	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Capaz! Aqui nem tem aeroporto, tchê!
-	Júlio de Castilhos: O que tu quer fazer agora?
-	- Tentar de novo => pergunta3
-	- Ouvir a história de novo => start_repeat
-- No interior do município
-	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Não, é no centro mesmo, vivente.
-	Júlio de Castilhos: O que tu quer fazer agora?
-	- Tentar de novo => pergunta3
-	- Ouvir a história de novo => start_repeat
-
-~ girias_intro
-Júlio de Castilhos: Agora que tu acertou tudo, percebeu que usei umas palavras bem diferentes, né?
 ~ girias_repeat
-Júlio de Castilhos: Aqui no sul a gente fala com bastante gíria gaúcha!
-Júlio de Castilhos: Quer ver? Olha só:
+Júlio de Castilhos: Então, tu deve ter notado que aqui no sul a gente tem um jeito bem nosso de falar, né?
+Júlio de Castilhos: No sul usamos muitas gírias gaúchas.
+Júlio de Castilhos: Antes de tu continuar a visita, posso te ensinar algumas! Olha só:
+=> giria_bah
 
-Júlio de Castilhos: "Bah" a gente usa pra demonstrar surpresa ou emoção — tipo "Wow!" em inglês.  
-Júlio de Castilhos: "Capaz" quer dizer tipo "No way!" ou "Really?!", dependendo do tom.  
-Júlio de Castilhos: E "piá" ou "guri" é como a gente chama um menino, tipo "boy" ou "kid".
+~ giria_bah
+Júlio de Castilhos: "Bah" é uma palavra que a gente usa pra mostrar surpresa ou emoção.  
+Júlio de Castilhos: Exemplo: "Bah, que frio hoje!"  
 
-Júlio de Castilhos: Agora vamos testar se tu entendeu direitinho!
-=> giria1
+Júlio de Castilhos: "Tchê" é uma palavra que a gente usa pra chamar alguém ou dar ênfase.  
+Júlio de Castilhos: Exemplo: "Tchê, que baita churrasco!" 
 
-~ giria1
-Júlio de Castilhos: O que significa "bah" em inglês?
+Júlio de Castilhos: "Tri" é uma palavra que a gente usa pra dizer "muito" ou "super" em inglês.  
+Júlio de Castilhos: Exemplo: "Esse jogo tá tri bom!"  
+
+Júlio de Castilhos: "Capaz" é usado pra expressar surpresa ou negação.  
+Júlio de Castilhos: Exemplo: "Capaz que ele fez isso sozinho!"   
+
+Júlio de Castilhos: "Pila" é como a gente chama dinheiro.  
+Júlio de Castilhos: Exemplo: "Esse lanche custou dez pila."
+
+Júlio de Castilhos: "Cusco" ou "Guaipeca" é como chamamos cachorro aqui no sul.  
+Júlio de Castilhos: Exemplo: "Olha aquele cusco dormindo no sol!"  
+
+Júlio de Castilhos: "Guri" é como chamamos menino e "Guria" é como chamamos menina aqui no sul.  
+Júlio de Castilhos: Exemplo: "Aquele guri joga futebol tri bem!"  
+
+Júlio de Castilhos: Agora que tu sabe algumas gírias gaúchas, responde aí:
+
+Júlio de Castilhos: Qual seria o equivalente a "Bah!" em inglês?
+- No!
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_bah
+	- Ouvir a explicação => girias_repeat
 - Wow!
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Certo! Bah é tipo "wow!" — surpresa!
-	=> giria2
-- No thanks
+	Júlio de Castilhos: Bah, acertou!
+	=> giria_tche
+- Sorry!
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Não é isso, piá! Tenta de novo ou quer ouvir a explicação novamente?
-	- Tentar de novo => giria1
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_bah
+	- Ouvir a explicação => girias_repeat
+- Yes!
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_bah
+	- Ouvir a explicação => girias_repeat
+
+~ giria_tche 
+Júlio de Castilhos: Em inglês, qual palavra tu usaria no lugar de "Tchê"?
+- No
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_tche
 	- Ouvir a explicação => girias_repeat
 - Sorry
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Bah não é pedido de desculpas! Quer tentar de novo ou ouvir a explicação?
-	- Tentar de novo => giria1
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_tche
 	- Ouvir a explicação => girias_repeat
 - Yes
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Não, tchê! Bah não quer dizer "sim". Quer tentar de novo ou ouvir a explicação?
-	- Tentar de novo => giria1
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_tche
+	- Ouvir a explicação => girias_repeat
+- Hey
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Bah, acertou!
+	=> giria_tri
+
+~ giria_tri
+Júlio de Castilhos: Como a frase "Esse chimarrão tá tri quente!" ficaria em inglês?
+- This chimarrão is green!
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_tri
+	- Ouvir a explicação => girias_repeat
+- This chimarrão isn't hot!
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_tri
+	- Ouvir a explicação => girias_repeat
+- This chimarrão is really hot!
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Bah, acertou!
+	=> giria_capaz
+- This chimarrão is sweet!
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_tri
 	- Ouvir a explicação => girias_repeat
 
-~ giria2
-Júlio de Castilhos: E "capaz"? Qual seria o significado mais próximo?
-- No way!
+~ giria_capaz
+Júlio de Castilhos: Agora me diz, o que significa "No way" em gíria gaúcha?
+- Capaz
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, vivente! Capaz expressa surpresa, tipo "no way!".
-	=> giria3
-- I can
+	Júlio de Castilhos: Bah, acertou!
+	=> giria_pila
+- Barbaridade
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Capaz nesse caso não é de "ser capaz de fazer algo"! Quer tentar de novo ou ouvir a explicação?
-	- Tentar de novo => giria2
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_capaz
 	- Ouvir a explicação => girias_repeat
-- Maybe
+- Tri
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: É mais forte que "talvez", tenta de novo. Quer tentar de novo ou ouvir a explicação?
-	- Tentar de novo => giria2
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_capaz
 	- Ouvir a explicação => girias_repeat
-- Sure
+- Talvez
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Bah, não! "Capaz" geralmente nega, não afirma. Quer tentar de novo ou ouvir a explicação?
-	- Tentar de novo => giria2
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_capaz
 	- Ouvir a explicação => girias_repeat
 
-~ giria3
-Júlio de Castilhos: E por fim... o que quer dizer "piá"?
-- Boy
+~ giria_pila
+  
+Júlio de Castilhos: Como a frase "Paguei dez pila nesse lanche!" ficaria em inglês?
+- I paid ten bucks for this snack!
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Tri bem! "Piá" é como chamamos um menino.
+	Júlio de Castilhos: Bah, acertou!
+	=> giria_cusco
+- I walked ten miles for this snack!
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_pila
+	- Ouvir a explicação => girias_repeat
+- I ate ten pieces of this snack!
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_pila
+	- Ouvir a explicação => girias_repeat
+- I ate ten pieces of this snack!
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_pila
+	- Ouvir a explicação => girias_repeat
+
+~ giria_cusco
+Júlio de Castilhos: How do you say ‘dog’ in Rio Grande do Sul?
+- Elefante
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_cusco
+	- Ouvir a explicação => girias_repeat
+- Gato
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Bah, acertou!
+	=> giria_guri_guria
+- Cusco
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_cusco
+	- Ouvir a explicação => girias_repeat
+- Cavalo
+	do GameDialogueManager.action_play_wrong_sound()
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_cusco
+	- Ouvir a explicação => girias_repeat
+
+~ giria_guri_guria
+Júlio de Castilhos: Qual é o significado de "guri" e "guria" em inglês?
+- Boy and Girl
+	do GameDialogueManager.action_play_correct_sound()
+	Júlio de Castilhos: Bah, acertou!
 	=> final
-- Grandpa
+- Grandpa and Grandma
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Tá loco, piá! Não é um vovô. Quer tentar de novo ou ouvir a explicação?
-	- Tentar de novo => giria3
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_guri_guria
 	- Ouvir a explicação => girias_repeat
-- Worker
+- Father and Mother
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Capaz! Isso seria "trabalhador". Quer tentar de novo ou ouvir a explicação?
-	- Tentar de novo => giria3
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_guri_guria
 	- Ouvir a explicação => girias_repeat
-- Cat
+- Brother and Sister
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Não, não! Nem perto disso. Quer tentar de novo ou ouvir a explicação?
-	- Tentar de novo => giria3
+	Júlio de Castilhos: Bah, não é isso! 
+	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
+	- Tentar de novo => giria_guri_guria
 	- Ouvir a explicação => girias_repeat
 
 
 ~ final
 Júlio de Castilhos: Parabéns! Tu mandou muito bem nas perguntas!
 Júlio de Castilhos: Agora tu tá mais por dentro da nossa história e do nosso jeito de falar.
-Júlio de Castilhos: Leva contigo um cartão do Dicionário Gaúcho-Inglês — é tri legal!
 set GameState.museu_falou = true
 => END
