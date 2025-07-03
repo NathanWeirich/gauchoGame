@@ -116,11 +116,11 @@ Júlio de Castilhos: Parabéns guri, agora sabes mais sobra as roupas gaúchas!
 ~ start_repeat2
 Júlio de Castilhos: Parabéns! Achaste o item que representa a gastronomia gaúcha!
 Júlio de Castilhos: Sabia que a gastronomia(gastronomy ou food culture) gaúcha é cheia de sabores fortes e tradições?
-Júlio de Castilhos: Um dos itens mais importantes é o chimarrão (mate tea), uma bebida quente feita de erva-mate (mate herb).
+Júlio de Castilhos: Um dos itens mais importantes é o chimarrão (mate tea), uma bebida quente feita de erva-mate (yerba mate).
 Júlio de Castilhos: O principal prato típico é o churrasco (barbecue), feito com cortes grandes de carne assados.
-Júlio de Castilhos: Também tem o arroz carreteiro (wagoner’s rice), que é arroz misturado com carne picada e temperos.
+Júlio de Castilhos: Também tem o arroz carreteiro, que é arroz misturado com carne (meat) e temperos.
 Júlio de Castilhos: No inverno, o pinhão (pine nut) é muito consumido cozido ou assado, sendo uma comida típica das festas juninas.
-Júlio de Castilhos: Outro alimento muito comum é o queijo colonial (homemade cheese). É ótimo para comer com cuca.
+Júlio de Castilhos: Outro alimento muito comum é o queijo (cheese) colonial. É ótimo para comer com cuca.
 Júlio de Castilhos: Falando em cuca, é um tipo de bolo (cake) de origem alemã, que tem uma massa fofa coberta com farofa doce.
 
 Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre a gastronomia gaúcha, aqui vai um quiz!
@@ -128,13 +128,13 @@ Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre a gastronomia ga�
 => pergunta11
 ~ pergunta11
 Júlio de Castilhos: Como se diz “chimarrão” em inglês?
-- Corn cake
+- Cake
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta11
 	- Ouvir a história de novo => start_repeat2
-- Cheese bread
+- Cheese
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -163,7 +163,7 @@ Júlio de Castilhos: Como se diz “barbecue” em português?
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta22
 	- Ouvir a história de novo => start_repeat2
-- Arroz com carne picada
+- Erva-mate
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -178,7 +178,7 @@ Júlio de Castilhos: Como se diz “barbecue” em português?
 	
 ~ pergunta33
 Júlio de Castilhos: O arroz carreteiro é feito com arroz e ______.
-- Cheese
+- Pine nut
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -194,7 +194,7 @@ Júlio de Castilhos: O arroz carreteiro é feito com arroz e ______.
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta33
 	- Ouvir a história de novo => start_repeat2
-- Beans
+- Yerba mate
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -336,8 +336,8 @@ Júlio de Castilhos: Parabéns! Achaste o item que representa a história do Rio
 Júlio de Castilhos: Sabia que a história do Rio Grande do Sul é muito rica e cheia de diferentes povos e culturas?
 Júlio de Castilhos: Os primeiros habitantes da região foram os povos indígenas (indigenous peoples).
 Júlio de Castilhos: Depois, vieram as missões jesuíticas (jesuit missions), vilas criadas pelos padres jesuítas.
-Júlio de Castilhos: A região também foi marcada pela colonização portuguesa (portuguese) e espanhola (spanish).
-Júlio de Castilhos: Um fato importante foi a Revolução Farroupilha, quando os gaúchos lutaram por mais autonomia (autonomy).
+Júlio de Castilhos: Na região também ocorreu a colonização portuguesa (portuguese) e espanhola (spanish).
+Júlio de Castilhos: Um fato importante foi a Revolução Farroupilha, uma luta por mais autonomia (autonomy).
 Júlio de Castilhos: Apesar de terem perdido a guerra, essa revolução se tornou símbolo de coragem (courage) para o povo gaúcho.
 Júlio de Castilhos: Depois, houve a colonização europeia (european colonization), que trouxe diferentes tradições, comidas e festas.
 
@@ -352,7 +352,7 @@ Júlio de Castilhos: Como se diz “povos indígenas” em inglês?
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta1111
 	- Ouvir a história de novo => start_repeat4
-- Farmers
+- Portuguese peoples
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -362,7 +362,7 @@ Júlio de Castilhos: Como se diz “povos indígenas” em inglês?
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta2222
-- Colonial peoples
+- Spanish peoples
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -412,7 +412,7 @@ Júlio de Castilhos: A Revolução Farroupilha aconteceu porque os gaúchos quer
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta3333
 	- Ouvir a história de novo => start_repeat4
-- Gold
+- Courage
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -420,7 +420,7 @@ Júlio de Castilhos: A Revolução Farroupilha aconteceu porque os gaúchos quer
 	- Ouvir a história de novo => start_repeat4
 	
 ~ pergunta4444
-Júlio de Castilhos: A colonização europeia trouxe alemães, italianos e poloneses para o RS.
+Júlio de Castilhos: A colonização trouxe europeus para o RS.
 - True
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê! 
@@ -565,19 +565,19 @@ Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre as festas e event
 => pergunta111111
 ~ pergunta111111
 Júlio de Castilhos: Como se diz “Semana Farroupilha” em inglês?
-- Autumn Festival
+- Italian Festivals
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta111111
 	- Ouvir a história de novo => start_repeat6
-- Winter Week
+- Native Music Festivals
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta111111
 	- Ouvir a história de novo => start_repeat6
-- Carnival Week
+- Italian Festivals
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
