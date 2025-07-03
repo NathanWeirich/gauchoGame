@@ -1,17 +1,17 @@
 ~ chapeu
 ~ start_repeat1
-Júlio de Castilhos: Parabéns! achaste o item que representa a vestimenta gaúcha!
-Júlio de Castilhos: Os peões gaúchos têm uma vestimenta típica, parte da cultura e da tradição do Rio Grande do Sul.
-Júlio de Castilhos: Eles usam a bombacha, uma calça larga e confortável, ideal para montar a cavalo e trabalhar no campo.
-Júlio de Castilhos: Nos pés, usam botas de couro, que protegem ao andar nas cavalgadas.
-Júlio de Castilhos: Na cintura, o peão usa a guaiaca, onde guarda pequenos objetos. 
-Júlio de Castilhos: No pescoço, sempre carrega um lenço, para se proteger do vento e do sol.
-Júlio de Castilhos: Para completar, usam chapéu ou boina, que protegem a cabeça do sol forte durante o trabalho.
+Júlio de Castilhos: Parabéns! Achaste o item que representa a vestimenta do gaúcho!
+Júlio de Castilhos: Sabia que os peões têm roupas próprias para trabalhar no campo?
+Júlio de Castilhos: Eles usam a bombacha (baggy pants), uma calça larga e confortável para andar a cavalo e trabalhar.
+Júlio de Castilhos: Nos pés usam botas de couro (leather boots), que protegem ao andar nas cavalgadas.
+Júlio de Castilhos: Na cintura, usam a guaiaca, um cinto (belt) largo onde guardam coisas pequenas.
+Júlio de Castilhos: No pescoço, sempre carregam um lenço (scarf), para se proteger do vento e do sol.
+Júlio de Castilhos: Para completar, usam chapéu (hat) ou boina (beret), que protegem a cabeça do sol forte durante o trabalho.
 
 Júlio de Castilhos: As prendas, que são as mulheres gaúchas, também têm uma vestimenta tradicional e cheia de significado.
-Júlio de Castilhos: Elas usam o vestido de prenda, que é longo e rodado, geralmente com rendas, bordados e cores vivas. 
-Júlio de Castilhos: Nos pés, usam sapatos fechados, que combinam com o vestido.
-Júlio de Castilhos: Os cabelos das prendas são geralmente presos em trança ou coque, muitas vezes decorados.
+Júlio de Castilhos: Elas usam o vestido de prenda (long dress), que é longo e rodado, geralmente com rendas, bordados e cores vivas. 
+Júlio de Castilhos: Nos pés, usam sapatos (shoes), que combinam com o vestido.
+Júlio de Castilhos: Os cabelos das prendas são geralmente presos em trança (braid) ou coque (bun), muitas vezes decorados.
 
 Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre as roupas do gaúcho, aqui vai um quiz!
 
@@ -42,7 +42,7 @@ Júlio de Castilhos: Como se diz "chapéu" em inglês?
 	- Ouvir a história de novo => start_repeat1
 
 ~ pergunta2
-Júlio de Castilhos: How do you say “dress” in Portuguese?
+Júlio de Castilhos: Como se diz “dress” em português?
 - Lenço
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
@@ -67,7 +67,7 @@ Júlio de Castilhos: How do you say “dress” in Portuguese?
 	- Ouvir a história de novo => start_repeat1
 	
 ~ pergunta3
-Júlio de Castilhos: The gaucho wears ______ on his legs to work.
+Júlio de Castilhos: O gaúcho usa ______ nas pernas para trabalhar.
 - Boots
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
@@ -92,14 +92,14 @@ Júlio de Castilhos: The gaucho wears ______ on his legs to work.
 	=> pergunta4
 	
 ~ pergunta4
-Júlio de Castilhos: The guaiaca is worn around the neck.
-- Verdadeiro
+Júlio de Castilhos: A guaiaca é usada em volta do pescoço.
+- True
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta4
 	- Ouvir a história de novo => start_repeat1
-- Falso
+- False
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê! 
 	=> feedback1
@@ -114,13 +114,14 @@ Júlio de Castilhos: Parabéns guri, agora sabes mais sobra as roupas gaúchas!
 
 ~ chimarrao
 ~ start_repeat2
-Júlio de Castilhos: A gastronomia gaúcha é cheia de sabores fortes e tradições que fazem parte do dia a dia.
-Júlio de Castilhos: Um dos itens mais importantes é o chimarrão, uma bebida quente feita de erva-mate.
-Júlio de Castilhos: O principal prato típico é o churrasco, feito com cortes grandes de carne.
-Júlio de Castilhos: Também tem o arroz carreteiro, que é arroz misturado com carne picada e temperos.
-Júlio de Castilhos: No inverno, o pinhão é muito consumido cozido ou assado, sendo uma comida típica das festas juninas.
-Júlio de Castilhos: Outro alimento muito comum é o queijo colonial, feito de forma artesanal. É ótimo para comer com cuca.
-Júlio de Castilhos: Falando em cuca, é um tipo de bolo de origem alemã, que tem uma massa fofa coberta com farofa doce.
+Júlio de Castilhos: Parabéns! Achaste o item que representa a gastronomia gaúcha!
+Júlio de Castilhos: Sabia que a gastronomia(gastronomy ou food culture) gaúcha é cheia de sabores fortes e tradições?
+Júlio de Castilhos: Um dos itens mais importantes é o chimarrão (mate tea), uma bebida quente feita de erva-mate (mate herb).
+Júlio de Castilhos: O principal prato típico é o churrasco (barbecue), feito com cortes grandes de carne assados.
+Júlio de Castilhos: Também tem o arroz carreteiro (wagoner’s rice), que é arroz misturado com carne picada e temperos.
+Júlio de Castilhos: No inverno, o pinhão (pine nut) é muito consumido cozido ou assado, sendo uma comida típica das festas juninas.
+Júlio de Castilhos: Outro alimento muito comum é o queijo colonial (homemade cheese). É ótimo para comer com cuca.
+Júlio de Castilhos: Falando em cuca, é um tipo de bolo (cake) de origem alemã, que tem uma massa fofa coberta com farofa doce.
 
 Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre a gastronomia gaúcha, aqui vai um quiz!
 
@@ -151,7 +152,7 @@ Júlio de Castilhos: Como se diz “chimarrão” em inglês?
 	- Ouvir a história de novo => start_repeat2
 
 ~ pergunta22
-Júlio de Castilhos: How do you say “barbecue” in Portuguese?
+Júlio de Castilhos: Como se diz “barbecue” em português?
 - Churrasco
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê!
@@ -176,7 +177,7 @@ Júlio de Castilhos: How do you say “barbecue” in Portuguese?
 	- Ouvir a história de novo => start_repeat2
 	
 ~ pergunta33
-Júlio de Castilhos: The “arroz carreteiro” is made with rice and ______.
+Júlio de Castilhos: O arroz carreteiro é feito com arroz e ______.
 - Cheese
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
@@ -201,14 +202,14 @@ Júlio de Castilhos: The “arroz carreteiro” is made with rice and ______.
 	- Ouvir a história de novo => start_repeat2
 	
 ~ pergunta44
-Júlio de Castilhos: Cuca is a type of traditional cake of italian origin.
-- Verdadeiro
+Júlio de Castilhos: A cuca é um tipo de bolo tradicional de origem italiana.
+- True
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta44
 	- Ouvir a história de novo => start_repeat2
-- Falso
+- False
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê!
 	=> feedback2
@@ -223,14 +224,12 @@ Júlio de Castilhos: Parabéns guri, agora sabes mais sobre a gastronomia gaúch
 
 ~ gaita
 ~ start_repeat3
-Júlio de Castilhos: A música e as danças gaúchas fazem parte da cultura e das festas tradicionais no Rio Grande do Sul.
-Júlio de Castilhos: Um dos instrumentos mais importantes é a gaita, usada para tocar músicas típicas nos rodeios e bailes gaúchos.
+Júlio de Castilhos: Parabéns! Achaste o item que representa a música e as danças tradicionais!
+Júlio de Castilhos: Sabia que a música e as danças gaúchas fazem parte da cultura e das festas regionais no Rio Grande do Sul?
+Júlio de Castilhos: Um dos instrumentos mais importantes é a gaita (accordion), usada para tocar nos rodeios e bailes gaúchos.
 Júlio de Castilhos: Existem várias danças tradicionais, como, por exemplo...
-Júlio de Castilhos: A chula, onde o dançarino mostra passos rápidos batendo os pés no chão, sem sair do lugar.
-Júlio de Castilhos: Tem também a Vaneira, que é dançada em pares, com passos rápidos e alegres.
-Júlio de Castilhos: O Xote também é dançado em pares, mas com passos mais calmos e românticos.
-Júlio de Castilhos: Já a Milonga tem um ritmo mais lento, com passos marcados e elegantes.
-Júlio de Castilhos: A música nativista é outro estilo muito forte aqui no Sul. Ela fala sobre o campo, os cavalos e a vida simples.
+Júlio de Castilhos: A vaneira, que é dançada em pares, com passos rápidos (fast) e alegres.
+Júlio de Castilhos: Já o xote (schottische) também é dançado em pares, mas com passos mais calmos (calm).
 
 Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre a música e as danças gaúchas, aqui vai um quiz!
 
@@ -261,7 +260,7 @@ Júlio de Castilhos: Como se diz “gaita” em inglês?
 	- Ouvir a história de novo => start_repeat3
 
 ~ pergunta222
-Júlio de Castilhos: How do you say “dance” in Portuguese?
+Júlio de Castilhos: Como se diz “dance” em português?
 - Festa
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
@@ -286,7 +285,7 @@ Júlio de Castilhos: How do you say “dance” in Portuguese?
 	=> pergunta333
 	
 ~ pergunta333
-Júlio de Castilhos: The “xote” is danced in pairs with ______ steps.
+Júlio de Castilhos: O xote é dançado em pares de forma ______.
 - Fast
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
@@ -311,12 +310,12 @@ Júlio de Castilhos: The “xote” is danced in pairs with ______ steps.
 	- Ouvir a história de novo => start_repeat3
 	
 ~ pergunta444
-Júlio de Castilhos: Milonga is a dance with fast and cheerful steps.
-- Verdadeiro
+Júlio de Castilhos: Vaneira é uma dança com passos rápidos.
+- True
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê!
 	=> feedback3
-- Falso
+- False
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -333,13 +332,14 @@ Júlio de Castilhos: Parabéns guri, agora sabes mais sobre a música e as danç
 
 ~ livro
 ~ start_repeat4
-Júlio de Castilhos: A história do Rio Grande do Sul é muito rica e cheia de diferentes povos e culturas.
-Júlio de Castilhos: Os primeiros habitantes da região foram os povos indígenas, que viviam da caça, pesca, agricultura.
-Júlio de Castilhos: Depois, vieram as missões jesuíticas, que eram vilas criadas pelos padres jesuítas junto com os indígenas.
-Júlio de Castilhos: A região também foi marcada pela colonização portuguesa e espanhola.
-Júlio de Castilhos: Um fato muito importante foi a Revolução Farroupilha, quando os gaúchos lutaram por mais autonomia.
-Júlio de Castilhos: Apesar de terem perdido a guerra, essa revolução se tornou símbolo de coragem e orgulho para o povo gaúcho.
-Júlio de Castilhos: Depois, houve a colonização europeia, com a chegada de outros povos que trouxeram suas tradições, comidas e festas.
+Júlio de Castilhos: Parabéns! Achaste o item que representa a história do Rio Grande do Sul!
+Júlio de Castilhos: Sabia que a história do Rio Grande do Sul é muito rica e cheia de diferentes povos e culturas?
+Júlio de Castilhos: Os primeiros habitantes da região foram os povos indígenas (indigenous peoples).
+Júlio de Castilhos: Depois, vieram as missões jesuíticas (jesuit missions), vilas criadas pelos padres jesuítas.
+Júlio de Castilhos: A região também foi marcada pela colonização portuguesa (portuguese) e espanhola (spanish).
+Júlio de Castilhos: Um fato importante foi a Revolução Farroupilha, quando os gaúchos lutaram por mais autonomia (autonomy).
+Júlio de Castilhos: Apesar de terem perdido a guerra, essa revolução se tornou símbolo de coragem (courage) para o povo gaúcho.
+Júlio de Castilhos: Depois, houve a colonização europeia (european colonization), que trouxe diferentes tradições, comidas e festas.
 
 Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre a história do Rio Grande do Sul, aqui vai um quiz!
 
@@ -370,7 +370,7 @@ Júlio de Castilhos: Como se diz “povos indígenas” em inglês?
 	- Ouvir a história de novo => start_repeat4
 
 ~ pergunta2222
-Júlio de Castilhos: How do you say “missions” in Portuguese?
+Júlio de Castilhos: Como se diz “missions” em português?
 - Colonização
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê! As missões eram vilas criadas pelos jesuítas com os indígenas.
@@ -395,7 +395,7 @@ Júlio de Castilhos: How do you say “missions” in Portuguese?
 	- Ouvir a história de novo => start_repeat4
 	
 ~ pergunta3333
-Júlio de Castilhos: The “Revolução Farroupilha” happened because the gaúchos wanted ______.
+Júlio de Castilhos: A Revolução Farroupilha aconteceu porque os gaúchos queriam ______.
 - Autonomy
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê!
@@ -420,12 +420,12 @@ Júlio de Castilhos: The “Revolução Farroupilha” happened because the gaú
 	- Ouvir a história de novo => start_repeat4
 	
 ~ pergunta4444
-Júlio de Castilhos: The European colonization brought Germans, Italians, and Polish to RS.
-- Verdadeiro
+Júlio de Castilhos: A colonização europeia trouxe alemães, italianos e poloneses para o RS.
+- True
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê! 
 	=> feedback4
-- Falso
+- False
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê! 
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -442,11 +442,11 @@ Júlio de Castilhos: Parabéns guri, agora sabes mais sobre a história do Rio G
 
 ~ bota
 ~ start_repeat5
-Júlio de Castilhos: As atividades rurais mostram como o gaúcho tem uma ligação forte com o campo e com os animais.
-Júlio de Castilhos: Uma das principais atividades é a criação de gado, onde os peões cuidam dos bois e vacas.
-Júlio de Castilhos: No campo, também é muito importante o cultivo agrícola, principalmente de soja, milho e trigo.
-Júlio de Castilhos: Essas plantações ocupam grandes áreas e ajudam muito na economia do estado e do Brasil.
-Júlio de Castilhos: Essas atividades mostram a força e o orgulho do gaúcho, mantém viva as antigas tradições.
+Júlio de Castilhos: Parabéns! Achaste o item que representa as atividades no campo!
+Júlio de Castilhos: Sabia que as atividades rurais representam uma ligação forte do gaúcho com o campo?
+Júlio de Castilhos: Uma das principais atividades é a criação de gado (cattle).
+Júlio de Castilhos: Também tem o cultivo agrícola, principalmente de soja (soybeans), milho (corn) e trigo (wheat).
+Júlio de Castilhos: Essas plantações ocupam grandes áreas e ajudam muito na economia (economy) do estado e do Brasil.
 
 Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre as atividades rurais do Rio Grande do Sul, aqui vai um quiz!
 
@@ -477,7 +477,7 @@ Júlio de Castilhos: Como se diz “gado” em inglês?
 	=> pergunta22222
 
 ~ pergunta22222
-Júlio de Castilhos: How do you say “wheat” in Portuguese?
+Júlio de Castilhos: Como se diz “wheat” em português?
 - Soja
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
@@ -502,7 +502,7 @@ Júlio de Castilhos: How do you say “wheat” in Portuguese?
 	- Ouvir a história de novo => start_repeat5
 	
 ~ pergunta33333
-Júlio de Castilhos: The main crops in RS are wheat, corn and ______.
+Júlio de Castilhos: As principais plantações do RS são trigo, milho e ______.
 - Soy
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê! 
@@ -527,12 +527,12 @@ Júlio de Castilhos: The main crops in RS are wheat, corn and ______.
 	- Ouvir a história de novo => start_repeat5
 	
 ~ pergunta44444
-Júlio de Castilhos: The main crops in RS help the economy of the state and Brazil.
-- Verdadeiro
+Júlio de Castilhos: As principais plantações do RS ajudam na economia do estado e do Brasil.
+- True
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê! 
 	=> feedback5
-- Falso
+- False
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê! 
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -549,12 +549,15 @@ Júlio de Castilhos: Parabéns guri, agora sabes mais sobre as atividades rurais
 
 ~ laco
 ~ start_repeat6
-Júlio de Castilhos: As festas e eventos mostram como o povo gaúcho gosta de manter suas tradições vivas.
-Júlio de Castilhos: Uma das comemorações mais importantes é a Semana Farroupilha, que acontece em setembro.
-Júlio de Castilhos: Nela, os gaúchos lembram a Revolução Farroupilha com desfiles, música e uso das roupas tradicionais.
-Júlio de Castilhos: Além disso, existem as festas típicas de colonização, com festas italianas e alemãs...
-Júlio de Castilhos: que celebram a chegada dos imigrantes europeus com músicas, comidas e danças tradicionais de cada povo.
-Júlio de Castilhos: Outro evento são os festivais nativistas, onde artistas apresentam músicas que falam sobre o campo.
+Júlio de Castilhos: Parabéns! Achaste o item que representa as festas do sul!
+Júlio de Castilhos: Sabia que as festas (festivals) mostram como o povo gaúcho gosta de manter suas tradições vivas?
+Júlio de Castilhos: Uma das comemorações mais importantes é a Semana Farroupilha (Farroupilha Week)...
+Júlio de Castilhos: que acontece todos os naos no mês de setembro (september).
+Júlio de Castilhos: Nela, os gaúchos comemoram a Revolução Farroupilha (Ragamuffin Revolution).
+Júlio de Castilhos: Além disso, existem as festas típicas de colonização...
+Júlio de Castilhos: com festas italianas (italian festivals) e alemãs (german festivals).  
+Júlio de Castilhos: Elas celebram a chegada dos imigrantes europeus com músicas (songs) e comidas (foods) tradicionais.
+Júlio de Castilhos: Outro evento são os festivais nativistas (native music festivals), com músicas tradicionais.
 Júlio de Castilhos: Essas festas e eventos mostram como os gaúchos valorizam sua cultura e suas origens.
 
 Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre as festas e eventos do Rio Grande do Sul, aqui vai um quiz!
@@ -586,24 +589,24 @@ Júlio de Castilhos: Como se diz “Semana Farroupilha” em inglês?
 	=> pergunta222222
 
 ~ pergunta222222
-Júlio de Castilhos: How do you say “lasso” in Portuguese?
-- Chapéu
+Júlio de Castilhos: Como se diz “september” em português?
+- Janeiro
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta222222
 	- Ouvir a história de novo => start_repeat6
-- Laço
+- Setembro
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta333333
-- Bombacha
+- Agosto
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta222222
 	- Ouvir a história de novo => start_repeat6
-- Lenço
+- Outubro
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
@@ -611,7 +614,7 @@ Júlio de Castilhos: How do you say “lasso” in Portuguese?
 	- Ouvir a história de novo => start_repeat6
 	
 ~ pergunta333333
-Júlio de Castilhos: Nativist festivals feature ______ about the countryside.
+Júlio de Castilhos: Os festivais nativistas apresentam ______ sobre o campo.
 - Songs
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê! 
@@ -636,14 +639,14 @@ Júlio de Castilhos: Nativist festivals feature ______ about the countryside.
 	- Ouvir a história de novo => start_repeat6
 	
 ~ pergunta444444
-Júlio de Castilhos: The Farroupilha Week celebrates European colonization.
-- Verdadeiro
+Júlio de Castilhos: A Semana Farroupilha celebra a colonização européia.
+- True
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta444444
 	- Ouvir a história de novo => start_repeat6
-- Falso
+- False
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Isso aí, tchê! 
 	=> feedback6
