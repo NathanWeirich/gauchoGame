@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://6hlok2tvs2up"]
+[gd_scene load_steps=23 format=4 uid="uid://6hlok2tvs2up"]
 
 [ext_resource type="Script" uid="uid://cxdywqkg0rcji" path="res://scenes/levels/level_3.gd" id="1_qi5uv"]
 [ext_resource type="PackedScene" uid="uid://66a68ao55mka" path="res://scenes/components/save_level_data_component.tscn" id="2_f6egh"]
@@ -6,6 +6,7 @@
 [ext_resource type="TileSet" uid="uid://esasubu4bc34" path="res://Tilesets/game_tile_set.tres" id="4_apo5x"]
 [ext_resource type="PackedScene" uid="uid://bpkmnmomdld1i" path="res://audio/music/sculptures_theme.tscn" id="4_josfm"]
 [ext_resource type="PackedScene" uid="uid://dq8qxxiluwjbo" path="res://scenes/components/save_data_component.tscn" id="5_josfm"]
+[ext_resource type="AudioStream" uid="uid://dxprsqa1f2mk5" path="res://assets/audio/music/tema_level3.ogg" id="5_o3ttr"]
 [ext_resource type="Resource" uid="uid://ck2fj8toubmfv" path="res://resources/tilemap_layer_data_resource.tres" id="6_lgrx1"]
 [ext_resource type="PackedScene" uid="uid://bvn0eunf5fv5i" path="res://scenes/components/field_cursor_component.tscn" id="7_fhpes"]
 [ext_resource type="Script" uid="uid://b24a0en0ptr6b" path="res://scenes/components/field_cursor_component.gd" id="8_vmg1d"]
@@ -31,6 +32,7 @@ script = ExtResource("1_qi5uv")
 [node name="WrongSound" parent="." instance=ExtResource("14_apo5x")]
 
 [node name="SculpturesTheme" parent="." instance=ExtResource("4_josfm")]
+stream = ExtResource("5_o3ttr")
 
 [node name="SaveLevelDataComponent" parent="." instance=ExtResource("2_f6egh")]
 script = ExtResource("3_t4txi")

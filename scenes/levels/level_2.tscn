@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=4 uid="uid://c4in0o82gyi4k"]
+[gd_scene load_steps=10 format=4 uid="uid://c4in0o82gyi4k"]
 
 [ext_resource type="TileSet" uid="uid://esasubu4bc34" path="res://Tilesets/game_tile_set.tres" id="1_j2425"]
 [ext_resource type="Script" uid="uid://we2j0bl52xct" path="res://scenes/levels/level_2.gd" id="1_ra442"]
 [ext_resource type="PackedScene" uid="uid://b2q428q160ky" path="res://scenes/houses/museum.tscn" id="2_g2h2n"]
 [ext_resource type="PackedScene" uid="uid://c1g1e62dsxdai" path="res://audio/music/museum_theme.tscn" id="4_8qukl"]
 [ext_resource type="PackedScene" uid="uid://ciy0o32qrlk44" path="res://scenes/houses/door.tscn" id="4_fiq81"]
+[ext_resource type="AudioStream" uid="uid://c5xtxta80tr4j" path="res://assets/audio/music/tema_level2.ogg" id="5_3p04p"]
 [ext_resource type="PackedScene" uid="uid://b4vpgiplnuer3" path="res://scenes/characters/npc/museum_npc.tscn" id="5_l37oo"]
 [ext_resource type="PackedScene" uid="uid://c4t18l63uaqs8" path="res://audio/sfx/correct_sound.tscn" id="6_ibugp"]
 [ext_resource type="PackedScene" uid="uid://utgbtrjup4tt" path="res://audio/sfx/wrong_sound.tscn" id="7_8qukl"]
@@ -18,6 +19,7 @@ script = ExtResource("1_ra442")
 [node name="WrongSound" parent="." instance=ExtResource("7_8qukl")]
 
 [node name="MuseumTheme" parent="." instance=ExtResource("4_8qukl")]
+stream = ExtResource("5_3p04p")
 
 [node name="GameTileMap" type="Node2D" parent="."]
 y_sort_enabled = true

@@ -13,4 +13,5 @@ Júlio de Castilhos: aprender sobre o Rio Grande do Sul...
 Júlio de Castilhos: e, de quebra, praticar inglês de um jeito divertido!
 Júlio de Castilhos: Explore lugares famosos, como o Museu Vila Rica, o Jardim das Esculturas e a Cascata do Ivaí.
 Júlio de Castilhos: Preparado? Então, bora começar essa viagem juntos!
+set GameState.julio_falou = true
 => END
