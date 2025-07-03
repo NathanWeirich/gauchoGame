@@ -348,23 +348,23 @@ Júlio de Castilhos: Agora que tu já sabe um pouco mais sobre a história do Ri
 Júlio de Castilhos: Como se diz “povos indígenas” em inglês?
 - European peoples
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Errou, tchê! Os primeiros habitantes foram os povos indígenas.
+	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta1111
 	- Ouvir a história de novo => start_repeat4
 - Farmers
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Errou, tchê! Os primeiros habitantes foram os povos indígenas.
+	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta1111
 	- Ouvir a história de novo => start_repeat4
 - Indigenous peoples
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, tchê! Os primeiros habitantes foram os Guarani e os Kaingang.
+	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta2222
 - Colonial peoples
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Errou, tchê! Os primeiros habitantes foram os povos indígenas.
+	Júlio de Castilhos: Errou, tchê!
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta1111
 	- Ouvir a história de novo => start_repeat4
@@ -373,23 +373,23 @@ Júlio de Castilhos: Como se diz “povos indígenas” em inglês?
 Júlio de Castilhos: Como se diz “missions” em português?
 - Colonização
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Errou, tchê! As missões eram vilas criadas pelos jesuítas com os indígenas.
+	Júlio de Castilhos: Errou, tchê! 
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta2222
 	- Ouvir a história de novo => start_repeat4
 - Missões
 	do GameDialogueManager.action_play_correct_sound()
-	Júlio de Castilhos: Isso aí, tchê! As missões eram vilas organizadas pelos jesuítas e indígenas.
+	Júlio de Castilhos: Isso aí, tchê!
 	=> pergunta3333
 - Igrejas
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Errou, tchê! As missões eram vilas criadas pelos jesuítas.
+	Júlio de Castilhos: Errou, tchê! 
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta2222
 	- Ouvir a história de novo => start_repeat4
 - Povos
 	do GameDialogueManager.action_play_wrong_sound()
-	Júlio de Castilhos: Errou, tchê! As missões eram vilas criadas pelos jesuítas.
+	Júlio de Castilhos: Errou, tchê! 
 	Júlio de Castilhos: O que tu quer fazer agora?
 	- Tentar de novo => pergunta2222
 	- Ouvir a história de novo => start_repeat4

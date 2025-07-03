@@ -12,9 +12,7 @@ Júlio de Castilhos: deixa eu te contar um pouco sobre esse lugar tri importante
 Júlio de Castilhos: O Museu Municipal Vila Rica fica bem aqui no centro de Júlio de Castilhos.
 Júlio de Castilhos: São mais de duas mil peças que contam a história da cidade e da nossa região.
 Júlio de Castilhos: Tem objetos antigos, documentos, fotografias e muito mais, tudo tri interessante de ver.
-Júlio de Castilhos: Tudo mostrando como era a vida do povo daqui no passado.
-Júlio de Castilhos: Isso ajuda a preservar a memória e a identidade da cidade.
-Júlio de Castilhos: E ainda serve de base para estudos e pesquisas históricas.
+Júlio de Castilhos: Isso ajuda a preservar a memória e a identidade da cidade!
 
 ~ girias_repeat
 Júlio de Castilhos: Então, tu deve ter notado que aqui no sul a gente tem um jeito bem nosso de falar, né?
@@ -179,11 +177,11 @@ Júlio de Castilhos: How do you say ‘dog’ in Rio Grande do Sul?
 	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
 	- Tentar de novo => giria_cusco
 	- Ouvir a explicação => girias_repeat
-- Gato
+- Cusco
 	do GameDialogueManager.action_play_correct_sound()
 	Júlio de Castilhos: Bah, acertou!
 	=> giria_guri_guria
-- Cusco
+- Gato
 	do GameDialogueManager.action_play_wrong_sound()
 	Júlio de Castilhos: Bah, não é isso! 
 	Júlio de Castilhos: Quer tentar de novo ou quer ouvir a explicação novamente?
